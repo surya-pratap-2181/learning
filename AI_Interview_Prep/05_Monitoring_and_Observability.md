@@ -1,11 +1,15 @@
-================================================================================
+---
+title: "Monitoring & Observability"
+layout: default
+parent: "DevOps & Cloud Infrastructure"
+nav_order: 6
+---
+
 SECTION 5: MONITORING AND OBSERVABILITY FOR AI SYSTEMS
 AI System Design Interview Guide for AI/ML Engineers (2025-2026)
-================================================================================
+## 
 
-========================================
 5.1 LLM OBSERVABILITY TOOLS AND FRAMEWORKS
-========================================
 
 A) LANGSMITH (by LangChain):
    Purpose: Tracing, debugging, and monitoring LLM applications
@@ -123,9 +127,8 @@ D) COMPARISON TABLE:
 ```
 
 
-========================================
-5.2 PROMPT MONITORING
-========================================
+## 5.2 PROMPT MONITORING
+
 
 WHAT TO MONITOR:
 
@@ -180,9 +183,8 @@ WHAT TO MONITOR:
    ```
 
 
-========================================
-5.3 DRIFT DETECTION
-========================================
+## 5.3 DRIFT DETECTION
+
 
 TYPES OF DRIFT IN AI SYSTEMS:
 
@@ -252,9 +254,8 @@ MONITORING DASHBOARD FOR DRIFT:
 ```
 
 
-========================================
-5.4 COST TRACKING
-========================================
+## 5.4 COST TRACKING
+
 
 WHAT TO TRACK:
 
@@ -313,9 +314,8 @@ Rules:
 ```
 
 
-========================================
-5.5 LATENCY MONITORING
-========================================
+## 5.5 LATENCY MONITORING
+
 
 LATENCY BREAKDOWN FOR LLM SYSTEM:
 ```
@@ -422,9 +422,8 @@ OBSERVABILITY STACK:
                   [Alert Manager -> PagerDuty/Slack]
 ```
 
-========================================
-5.6 LLM-SPECIFIC OBSERVABILITY (2025-2026)
-========================================
+## 5.6 LLM-SPECIFIC OBSERVABILITY (2025-2026)
+
 
 New tools and standards have emerged specifically for LLM application
 monitoring, beyond traditional APM.
@@ -492,6 +491,5 @@ Trace: "Research and summarize AI trends"
 > this level of observability -- tracing each agent step, tracking tool call
 > success rates, and monitoring costs across different model providers.
 
-========================================
-END OF SECTION 5 (Updated February 2026)
-========================================
+## END OF SECTION 5 (Updated February 2026)
+

@@ -1,3 +1,10 @@
+---
+title: "Project Case Studies"
+layout: default
+parent: "Interview Practice & Career"
+nav_order: 5
+---
+
 # Project Case Studies: "Tell Me About Your Project" Interview Prep
 ## Detailed Architecture Breakdowns for AI Engineer Interviews (2025-2026)
 

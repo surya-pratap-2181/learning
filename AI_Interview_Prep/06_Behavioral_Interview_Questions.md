@@ -1,3 +1,10 @@
+---
+title: "Behavioral Questions"
+layout: default
+parent: "Interview Practice & Career"
+nav_order: 1
+---
+
 # Section 6: Behavioral Interview Questions for Senior AI Engineers
 
 ---

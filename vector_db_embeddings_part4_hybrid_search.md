@@ -1,3 +1,10 @@
+---
+title: "Part 4 - Hybrid Search"
+layout: default
+parent: "Vector Databases & Embeddings"
+nav_order: 5
+---
+
 # PART 4: HYBRID SEARCH
 
 ---

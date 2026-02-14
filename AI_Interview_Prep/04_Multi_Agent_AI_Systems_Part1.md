@@ -1,3 +1,10 @@
+---
+title: "Multi-Agent Systems Part 1"
+layout: default
+parent: "AI Frameworks & Agents"
+nav_order: 4
+---
+
 # Multi-Agent AI Systems - Complete Interview Guide (Part 1)
 # Architecture Patterns, AG2/AutoGen Deep Dive, Communication Patterns
 # For AI Engineers 2025-2026

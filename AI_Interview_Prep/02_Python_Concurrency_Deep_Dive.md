@@ -1,3 +1,10 @@
+---
+title: "Python Concurrency"
+layout: default
+parent: "Python & Coding"
+nav_order: 2
+---
+
 # Section 2: Concurrency in Python -- Deep Dive for AI Engineers
 
 ---

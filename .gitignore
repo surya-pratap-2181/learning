@@ -1,1 +1,9 @@
 Surya_AI_Engineer*
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+.bundle/
+Gemfile.lock
+add_frontmatter.py

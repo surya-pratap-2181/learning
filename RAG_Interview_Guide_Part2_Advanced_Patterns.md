@@ -1,3 +1,10 @@
+---
+title: "Part 2 - Advanced Patterns"
+layout: default
+parent: "RAG Systems"
+nav_order: 3
+---
+
 
 # RAG Interview Guide
 # PART 2: ADVANCED RAG PATTERNS

@@ -1,3 +1,10 @@
+---
+title: "Python for AI Deep Dive"
+layout: default
+parent: "Python & Coding"
+nav_order: 1
+---
+
 # Section 1: Python for AI -- Deep Dive Interview Questions & Answers
 
 ---

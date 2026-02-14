@@ -1,3 +1,10 @@
+---
+title: "Part 5 - Metadata Filtering"
+layout: default
+parent: "Vector Databases & Embeddings"
+nav_order: 6
+---
+
 # PART 5: METADATA FILTERING
 
 ---

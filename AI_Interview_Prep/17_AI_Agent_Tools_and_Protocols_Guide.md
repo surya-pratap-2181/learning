@@ -1,3 +1,10 @@
+---
+title: "AI Agent Tools & Protocols"
+layout: default
+parent: "AI Frameworks & Agents"
+nav_order: 7
+---
+
 # AI Agent Tools & Protocols: MCP, A2A, Composio, Function Calling (2025-2026)
 ## The Definitive Interview Guide for AI Engineers
 

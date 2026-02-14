@@ -1,3 +1,10 @@
+---
+title: "LangChain & LangGraph Deep Dive"
+layout: default
+parent: "AI Frameworks & Agents"
+nav_order: 1
+---
+
 # LangChain & LangGraph Comprehensive Interview Guide for AI Engineers (2025-2026)
 
 ---
@@ -2750,7 +2757,6 @@ results = llm.batch(
 
 ```
 LangChain Ecosystem (2025-2026):
-================================
 
 langchain-core (0.3.x)
   - Base abstractions: Runnables, Messages, Prompts, Output Parsers

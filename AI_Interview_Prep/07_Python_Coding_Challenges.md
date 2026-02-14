@@ -1,3 +1,11 @@
+---
+title: "Python Coding Challenges"
+layout: default
+parent: "Python & Coding"
+nav_order: 4
+render_with_liquid: false
+---
+
 # Section 7: Python Coding Challenges for AI Engineer Roles
 
 ---

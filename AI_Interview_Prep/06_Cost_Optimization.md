@@ -1,11 +1,15 @@
-================================================================================
+---
+title: "Cost Optimization"
+layout: default
+parent: "DevOps & Cloud Infrastructure"
+nav_order: 8
+---
+
 SECTION 6: COST OPTIMIZATION FOR AI SYSTEMS
 AI System Design Interview Guide for AI/ML Engineers (2025-2026)
-================================================================================
+## 
 
-========================================
 6.1 MODEL SELECTION BASED ON COST
-========================================
 
 MODEL COST TIERS (2025 pricing per 1M tokens):
 
@@ -86,9 +90,8 @@ SAVINGS: ~78% cost reduction with smart routing
 ```
 
 
-========================================
-6.2 CACHING FOR COST REDUCTION
-========================================
+## 6.2 CACHING FOR COST REDUCTION
+
 
 CACHING IMPACT ANALYSIS:
 
@@ -120,9 +123,8 @@ CACHE INVALIDATION:
 - Version-based (new model deployed -> flush all caches)
 
 
-========================================
-6.3 BATCHING FOR COST REDUCTION
-========================================
+## 6.3 BATCHING FOR COST REDUCTION
+
 
 A) REQUEST BATCHING:
    ```
@@ -171,9 +173,8 @@ C) EMBEDDING BATCHING:
    ```
 
 
-========================================
-6.4 TOKEN OPTIMIZATION
-========================================
+## 6.4 TOKEN OPTIMIZATION
+
 
 A) PROMPT COMPRESSION:
    ```
@@ -233,9 +234,8 @@ D) FEW-SHOT OPTIMIZATION:
    ```
 
 
-========================================
-6.5 FALLBACK CHAINS (CASCADE PATTERN)
-========================================
+## 6.5 FALLBACK CHAINS (CASCADE PATTERN)
+
 
 PATTERN: Try expensive model, fall back to cheaper on failure or for simple queries.
 
@@ -328,9 +328,8 @@ Savings: 71%
 ```
 
 
-========================================
-6.6 INFRASTRUCTURE COST OPTIMIZATION
-========================================
+## 6.6 INFRASTRUCTURE COST OPTIMIZATION
+
 
 A) SPOT/PREEMPTIBLE INSTANCES:
    - 60-70% cheaper than on-demand
@@ -377,6 +376,5 @@ E) SELF-HOSTED VS API:
      - Have team to manage infrastructure
    ```
 
-========================================
-END OF SECTION 6
-========================================
+## END OF SECTION 6
+

@@ -1,11 +1,15 @@
-================================================================================
+---
+title: "AI System Design Patterns"
+layout: default
+parent: "System Design & Architecture"
+nav_order: 1
+---
+
 SECTION 1: AI SYSTEM DESIGN PATTERNS
 AI System Design Interview Guide for AI/ML Engineers (2025-2026)
-================================================================================
+## 
 
-========================================
 1.1 SERVING LLMs AT SCALE
-========================================
 
 KEY CHALLENGES:
 - LLMs are memory-intensive (GPT-3 175B params = ~350GB in FP16)
@@ -73,9 +77,8 @@ E) QUANTIZATION SERVING
    - Enables serving 70B models on single A100 (80GB) with INT4
 
 
-========================================
-1.2 MODEL SERVING ARCHITECTURES
-========================================
+## 1.2 MODEL SERVING ARCHITECTURES
+
 
 A) DIRECT SERVING ARCHITECTURE
    [Client] --> [Model Server (vLLM/TGI)] --> [GPU]
@@ -119,9 +122,8 @@ D) SIDECAR PATTERN FOR AI
    - Useful for edge deployment, embedding models
 
 
-========================================
-1.3 API GATEWAY PATTERNS FOR AI
-========================================
+## 1.3 API GATEWAY PATTERNS FOR AI
+
 
 AI-SPECIFIC GATEWAY REQUIREMENTS:
 - Streaming support (SSE/WebSocket for token-by-token generation)
@@ -188,9 +190,8 @@ response = completion(
 ```
 
 
-========================================
-1.4 LOAD BALANCING FOR AI SERVICES
-========================================
+## 1.4 LOAD BALANCING FOR AI SERVICES
+
 
 CHALLENGES UNIQUE TO AI:
 - Requests have highly variable processing times (10 tokens vs 4000 tokens)
@@ -246,9 +247,8 @@ F) PRIORITY-BASED QUEUING
    |-- P3: Background (fine-tuning) -> preemptible
 
 
-========================================
-1.5 CACHING STRATEGIES FOR AI
-========================================
+## 1.5 CACHING STRATEGIES FOR AI
+
 
 A) EXACT CACHE (Deterministic Cache)
 
@@ -383,9 +383,8 @@ D) MULTI-LEVEL CACHE STRATEGY
                  [Cache response at L1 + L2]
 
 
-========================================
-1.6 RATE LIMITING FOR AI SERVICES
-========================================
+## 1.6 RATE LIMITING FOR AI SERVICES
+
 
 AI-SPECIFIC RATE LIMITING DIMENSIONS:
 1. Requests per minute (RPM) - standard
@@ -466,9 +465,8 @@ class AIRateLimiter:
         return current_usage <= tier_limit
 ```
 
-========================================
-1.8 AI GATEWAY PATTERNS (2025-2026)
-========================================
+## 1.8 AI GATEWAY PATTERNS (2025-2026)
+
 
 AI Gateways have emerged as a critical infrastructure layer for production
 LLM applications. They sit between clients and LLM providers, providing:
@@ -540,6 +538,5 @@ Key metrics to track in production LLM systems:
 > and gateway-level security. This is directly relevant to your platform
 > architecture work.
 
-========================================
-END OF SECTION 1 (Updated February 2026)
-========================================
+## END OF SECTION 1 (Updated February 2026)
+

@@ -1,10 +1,15 @@
-================================================================================
-  SECTION 3: DOCKER FOR AI/ML - INTERVIEW QUESTIONS & ANSWERS (2025-2026)
-================================================================================
+---
+title: "Docker for AI"
+layout: default
+parent: "DevOps & Cloud Infrastructure"
+nav_order: 3
+---
 
-##############################################################################
-# 3.1  CONTAINERIZING ML MODELS
-##############################################################################
+## SECTION 3: DOCKER FOR AI/ML - INTERVIEW QUESTIONS & ANSWERS (2025-2026)
+
+
+## 3.1  CONTAINERIZING ML MODELS
+
 
 Q1: Why containerize ML models and what are the key benefits?
 
@@ -84,9 +89,8 @@ Key considerations:
 - Single worker for GPU (GPU doesn't benefit from multiple workers).
 - Multiple threads for I/O-bound preprocessing.
 
-##############################################################################
-# 3.2  MULTI-STAGE BUILDS FOR ML
-##############################################################################
+## 3.2  MULTI-STAGE BUILDS FOR ML
+
 
 Q3: How do multi-stage builds optimize ML Docker images?
 
@@ -150,9 +154,8 @@ Benefits for ML:
 - Model conversion happens in build, only optimized model ships.
 - Smaller images = faster pulls, faster scaling, lower registry costs.
 
-##############################################################################
-# 3.3  GPU SUPPORT IN DOCKER
-##############################################################################
+## 3.3  GPU SUPPORT IN DOCKER
+
 
 Q4: How does GPU support work in Docker?
 
@@ -233,9 +236,8 @@ Best practice:
 - Document minimum driver version in deployment docs.
 - Use nvidia-smi in health checks to verify GPU access.
 
-##############################################################################
-# 3.4  DOCKER COMPOSE FOR AI STACKS
-##############################################################################
+## 3.4  DOCKER COMPOSE FOR AI STACKS
+
 
 Q6: How do you use Docker Compose for AI/ML development stacks?
 
@@ -349,9 +351,8 @@ Key GPU syntax in Compose:
 Note: GPU support in Docker Compose requires Docker Compose v2 (the Go
 rewrite) and the NVIDIA Container Toolkit.
 
-##############################################################################
-# 3.5  OPTIMIZING IMAGE SIZES FOR ML
-##############################################################################
+## 3.5  OPTIMIZING IMAGE SIZES FOR ML
+
 
 Q7: How do you optimize Docker image sizes for ML workloads?
 
@@ -459,9 +460,8 @@ Model loading strategies:
 Best practice: Use init containers or download-at-startup for production.
 Bake into image for edge deployments without network access.
 
-##############################################################################
-# 3.8  DOCKER FOR LLM INFERENCE SERVERS (2025-2026)
-##############################################################################
+## 3.8  DOCKER FOR LLM INFERENCE SERVERS (2025-2026)
+
 
 Q9: How do you containerize LLM inference servers for production?
 

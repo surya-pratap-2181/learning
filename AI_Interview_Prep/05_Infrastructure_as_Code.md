@@ -1,10 +1,15 @@
-================================================================================
-  SECTION 5: INFRASTRUCTURE AS CODE FOR AI - QUESTIONS & ANSWERS (2025-2026)
-================================================================================
+---
+title: "Infrastructure as Code"
+layout: default
+parent: "DevOps & Cloud Infrastructure"
+nav_order: 5
+---
 
-##############################################################################
-# 5.1  TERRAFORM FOR AI INFRASTRUCTURE
-##############################################################################
+## SECTION 5: INFRASTRUCTURE AS CODE FOR AI - QUESTIONS & ANSWERS (2025-2026)
+
+
+## 5.1  TERRAFORM FOR AI INFRASTRUCTURE
+
 
 Q1: How do you use Terraform to provision AI/ML infrastructure on AWS?
 
@@ -314,9 +319,8 @@ Example - EKS cluster with GPU node groups:
     # ... configuration ...
   }
 
-##############################################################################
-# 5.2  CLOUDFORMATION FOR AI INFRASTRUCTURE
-##############################################################################
+## 5.2  CLOUDFORMATION FOR AI INFRASTRUCTURE
+
 
 Q4: How do you use CloudFormation for AI/ML infrastructure?
 

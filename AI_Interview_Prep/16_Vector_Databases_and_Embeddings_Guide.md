@@ -1,3 +1,10 @@
+---
+title: "Vector DBs Overview"
+layout: default
+parent: "Vector Databases & Embeddings"
+nav_order: 1
+---
+
 # Vector Databases & Embeddings: Complete Interview Guide (2025-2026)
 ## For AI Engineers Building RAG and Semantic Search Systems
 

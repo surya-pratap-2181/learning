@@ -1,11 +1,15 @@
-================================================================================
+---
+title: "Interview Questions Part 1"
+layout: default
+parent: "Interview Practice & Career"
+nav_order: 3
+---
+
 SECTION 9A: INTERVIEW QUESTIONS WITH DETAILED ANSWERS (Part 1)
 AI System Design Interview Guide for AI/ML Engineers (2025-2026)
-================================================================================
+## 
 
-========================================
 Q1: "How would you design a system to serve an LLM to 1 million users?"
-========================================
 
 FRAMEWORK FOR ANSWERING (Use this for ALL system design questions):
 1. Clarify requirements (2 min)
@@ -75,10 +79,8 @@ Step 5 - Cost estimate:
    - Total: ~$60K/month (within $100K budget)
 
 
-========================================
 Q2: "Design a RAG system that handles 10,000 documents
      and serves 1,000 queries per second."
-========================================
 
 ANSWER:
 
@@ -148,10 +150,8 @@ KEY TRADE-OFFS TO DISCUSS:
 - Freshness vs performance: real-time indexing vs batch (5-min delay)
 
 
-========================================
 Q3: "How would you handle model versioning and deployment
      in a production ML system?"
-========================================
 
 ANSWER:
 
@@ -237,10 +237,8 @@ DETAILED WORKFLOW:
    ```
 
 
-========================================
 Q4: "Design a system for real-time content moderation
      at social media scale (1M posts/minute)."
-========================================
 
 ANSWER:
 
@@ -296,10 +294,8 @@ Step 4 - Key design decisions:
 - Transparency: provide reasons for content removal
 
 
-========================================
 Q5: "How do you optimize the cost of an LLM-based application
      that's spending $500K/month on API calls?"
-========================================
 
 ANSWER:
 
@@ -364,9 +360,8 @@ Step 3 - Implementation priority:
 6. Self-host simple model (lower impact, 2 weeks)
 
 
-========================================
-Q6: "Design a multi-agent system for automated code review."
-========================================
+## Q6: "Design a multi-agent system for automated code review."
+
 
 ANSWER:
 
@@ -436,10 +431,8 @@ COST ESTIMATE:
 - Total: ~$0.02 per PR ($600/month for 1000 PRs/day)
 
 
-========================================
 Q7: "What is the difference between synchronous and asynchronous
      inference, and when would you use each?"
-========================================
 
 ANSWER:
 
@@ -493,6 +486,5 @@ Server: |--------|-generate token by token-----------|
 - User sees progress immediately
 - Most common for LLM chat interfaces
 
-========================================
-END OF SECTION 9A
-========================================
+## END OF SECTION 9A
+

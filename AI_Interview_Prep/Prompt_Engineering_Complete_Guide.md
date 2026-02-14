@@ -1,3 +1,11 @@
+---
+title: "Prompt Engineering"
+layout: default
+parent: "LLM & AI Fundamentals"
+nav_order: 4
+render_with_liquid: false
+---
+
 # Prompt Engineering: Comprehensive Interview Guide for AI Engineers (2025-2026)
 
 ---

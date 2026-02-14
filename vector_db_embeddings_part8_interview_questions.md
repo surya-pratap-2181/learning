@@ -1,3 +1,10 @@
+---
+title: "Part 8 - Interview Questions"
+layout: default
+parent: "Vector Databases & Embeddings"
+nav_order: 9
+---
+
 # PART 8: COMMON INTERVIEW QUESTIONS WITH DETAILED ANSWERS & CODE
 
 ---

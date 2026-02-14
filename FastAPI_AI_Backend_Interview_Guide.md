@@ -1,3 +1,10 @@
+---
+title: "FastAPI Backend Deep Dive"
+layout: default
+parent: "AI Frameworks & Agents"
+nav_order: 8
+---
+
 # FastAPI Backend Development for AI Applications -- Comprehensive Interview Guide (2025-2026)
 
 ---

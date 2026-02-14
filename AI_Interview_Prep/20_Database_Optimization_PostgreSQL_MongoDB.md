@@ -1,3 +1,10 @@
+---
+title: "Database Optimization"
+layout: default
+parent: "System Design & Architecture"
+nav_order: 6
+---
+
 # Database Optimization: PostgreSQL & MongoDB Interview Guide
 ## For AI Engineers (2025-2026)
 

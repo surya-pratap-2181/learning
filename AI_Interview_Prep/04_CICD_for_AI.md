@@ -1,10 +1,16 @@
-================================================================================
-  SECTION 4: CI/CD FOR AI/ML - INTERVIEW QUESTIONS & ANSWERS (2025-2026)
-================================================================================
+---
+title: "CI/CD for AI"
+layout: default
+parent: "DevOps & Cloud Infrastructure"
+nav_order: 4
+render_with_liquid: false
+---
 
-##############################################################################
-# 4.1  GITHUB ACTIONS FOR ML PIPELINES
-##############################################################################
+## SECTION 4: CI/CD FOR AI/ML - INTERVIEW QUESTIONS & ANSWERS (2025-2026)
+
+
+## 4.1  GITHUB ACTIONS FOR ML PIPELINES
+
 
 Q1: How do you design CI/CD pipelines for ML with GitHub Actions?
 
@@ -212,9 +218,8 @@ Self-hosted GPU runner setup:
     train:
       runs-on: [self-hosted, gpu, cuda12]
 
-##############################################################################
-# 4.2  MODEL VERSIONING
-##############################################################################
+## 4.2  MODEL VERSIONING
+
 
 Q3: How do you implement model versioning in ML projects?
 
@@ -279,9 +284,8 @@ DVC example:
   # Reproduce training
   dvc repro  # Runs pipeline defined in dvc.yaml
 
-##############################################################################
-# 4.3  A/B TESTING DEPLOYMENTS
-##############################################################################
+## 4.3  A/B TESTING DEPLOYMENTS
+
 
 Q4: How do you implement A/B testing for ML models in production?
 
@@ -348,9 +352,8 @@ Logging requirements:
 - Log: request_id, timestamp, model_version, user_id, features,
   prediction, confidence, ground_truth (when available), latency.
 
-##############################################################################
-# 4.4  CANARY DEPLOYMENTS
-##############################################################################
+## 4.4  CANARY DEPLOYMENTS
+
 
 Q5: What is a canary deployment for ML models and how do you implement it?
 
@@ -441,9 +444,8 @@ Kubernetes canary with Argo Rollouts:
       interval: 5m
       count: 6
 
-##############################################################################
-# 4.5  BLUE-GREEN DEPLOYMENTS
-##############################################################################
+## 4.5  BLUE-GREEN DEPLOYMENTS
+
 
 Q6: How does blue-green deployment work for ML models?
 

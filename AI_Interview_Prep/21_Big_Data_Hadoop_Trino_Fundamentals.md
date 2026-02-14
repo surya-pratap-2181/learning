@@ -1,3 +1,10 @@
+---
+title: "Big Data Hadoop & Trino"
+layout: default
+parent: "Interview Practice & Career"
+nav_order: 8
+---
+
 # Big Data Fundamentals: Hadoop, Trino & Distributed Computing
 ## Interview Guide for AI/Data Engineers (2025-2026)
 

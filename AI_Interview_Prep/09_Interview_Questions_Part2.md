@@ -1,12 +1,16 @@
-================================================================================
+---
+title: "Interview Questions Part 2"
+layout: default
+parent: "Interview Practice & Career"
+nav_order: 4
+---
+
 SECTION 9B: INTERVIEW QUESTIONS WITH DETAILED ANSWERS (Part 2)
 AI System Design Interview Guide for AI/ML Engineers (2025-2026)
-================================================================================
+## 
 
-========================================
 Q8: "How would you implement a semantic caching layer
      for an LLM application?"
-========================================
 
 ANSWER:
 
@@ -85,9 +89,8 @@ EVALUATION:
 - A/B test cached vs fresh responses for quality
 
 
-========================================
-Q9: "How do you handle LLM hallucinations in production?"
-========================================
+## Q9: "How do you handle LLM hallucinations in production?"
+
 
 ANSWER:
 
@@ -167,10 +170,8 @@ MULTI-LAYERED HALLUCINATION DEFENSE:
    - Retrain / update prompts based on common hallucination patterns
 
 
-========================================
 Q10: "Design a system for A/B testing different LLM models
       in production."
-========================================
 
 ANSWER:
 
@@ -255,10 +256,8 @@ KEY CONSIDERATIONS:
 5. Segmentation: analyze results by user segment (new vs returning, region, etc.)
 
 
-========================================
 Q11: "How would you implement rate limiting that accounts
       for both request count AND token usage?"
-========================================
 
 ANSWER:
 
@@ -337,10 +336,8 @@ async def reconcile_tokens(self, api_key, estimated, actual):
 ```
 
 
-========================================
 Q12: "Explain how you would design a fallback/cascade system
       for LLM reliability."
-========================================
 
 ANSWER:
 
@@ -453,9 +450,8 @@ class CircuitBreaker:
 ```
 
 
-========================================
-Q13: "How would you detect and prevent prompt injection attacks?"
-========================================
+## Q13: "How would you detect and prevent prompt injection attacks?"
+
 
 ANSWER:
 
@@ -530,10 +526,8 @@ Respond helpfully to the user's actual question.
 ```
 
 
-========================================
 Q14: "Walk me through how you would evaluate and compare
       two LLMs for a production use case."
-========================================
 
 ANSWER:
 
@@ -627,10 +621,8 @@ Step 5: Decision matrix (weighted)
 ```
 
 
-========================================
 Q15: "What are the key metrics you'd monitor for an
       LLM-powered production system?"
-========================================
 
 ANSWER:
 
@@ -690,9 +682,8 @@ DASHBOARD LAYOUT:
 ```
 
 
-========================================
-QUICK REFERENCE: INTERVIEW CHEAT SHEET
-========================================
+## QUICK REFERENCE: INTERVIEW CHEAT SHEET
+
 
 SYSTEM DESIGN FRAMEWORK (memorize this):
 1. REQUIREMENTS (2 min): Functional, non-functional, scale
@@ -726,6 +717,5 @@ KEY TOOLS ECOSYSTEM:
 - Experiment tracking: MLflow, W&B, ClearML
 - Deployment: KServe, Seldon, BentoML, Ray Serve
 
-========================================
-END OF SECTION 9B AND COMPLETE GUIDE
-========================================
+## END OF SECTION 9B AND COMPLETE GUIDE
+

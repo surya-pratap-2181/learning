@@ -1,11 +1,15 @@
-================================================================================
+---
+title: "Real-World Architecture Examples"
+layout: default
+parent: "System Design & Architecture"
+nav_order: 5
+---
+
 SECTION 8: REAL-WORLD ARCHITECTURE EXAMPLES
 AI System Design Interview Guide for AI/ML Engineers (2025-2026)
-================================================================================
+## 
 
-========================================
 8.1 CHATGPT-LIKE CONVERSATIONAL AI PLATFORM
-========================================
 
 ```
 ARCHITECTURE DIAGRAM (Description):
@@ -91,9 +95,8 @@ KEY DESIGN DECISIONS:
 5. Multi-model router for cost optimization
 
 
-========================================
-8.2 ENTERPRISE RAG SYSTEM (e.g., Internal Knowledge Base)
-========================================
+## 8.2 ENTERPRISE RAG SYSTEM (e.g., Internal Knowledge Base)
+
 
 ```
 ARCHITECTURE DIAGRAM (Description):
@@ -165,9 +168,8 @@ class PermissionAwareRAG:
 ```
 
 
-========================================
-8.3 AI-POWERED E-COMMERCE RECOMMENDATION ENGINE
-========================================
+## 8.3 AI-POWERED E-COMMERCE RECOMMENDATION ENGINE
+
 
 ```
 ARCHITECTURE DIAGRAM (Description):
@@ -256,9 +258,8 @@ Total SLA: < 200ms
 ```
 
 
-========================================
-8.4 MULTI-MODAL DOCUMENT INTELLIGENCE PLATFORM
-========================================
+## 8.4 MULTI-MODAL DOCUMENT INTELLIGENCE PLATFORM
+
 
 ```
 ARCHITECTURE DIAGRAM (Description):
@@ -320,9 +321,8 @@ ARCHITECTURE DIAGRAM (Description):
 ```
 
 
-========================================
-8.5 REAL-TIME AI CONTENT MODERATION (Social Media Scale)
-========================================
+## 8.5 REAL-TIME AI CONTENT MODERATION (Social Media Scale)
+
 
 ```
 ARCHITECTURE DIAGRAM (Description):
@@ -394,9 +394,8 @@ SCALE NUMBERS:
 - False negative rate < 1%
 
 
-========================================
-8.6 AI CODING ASSISTANT (Copilot-Style)
-========================================
+## 8.6 AI CODING ASSISTANT (Copilot-Style)
+
 
 ```
 ARCHITECTURE:
@@ -472,6 +471,5 @@ KEY OPTIMIZATION:
 - Speculative decoding: small model drafts, large model verifies
 - Client-side debouncing: reduce unnecessary requests by 80%
 
-========================================
-END OF SECTION 8
-========================================
+## END OF SECTION 8
+

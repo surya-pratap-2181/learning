@@ -1,3 +1,11 @@
+---
+title: "Package Management & Code Quality"
+layout: default
+parent: "Python & Coding"
+nav_order: 5
+render_with_liquid: false
+---
+
 # Section 5: Package Management & Code Quality for AI Engineers
 
 ---

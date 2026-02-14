@@ -1,11 +1,15 @@
-================================================================================
+---
+title: "Common System Design Questions"
+layout: default
+parent: "System Design & Architecture"
+nav_order: 2
+---
+
 SECTION 2: COMMON AI SYSTEM DESIGN INTERVIEW QUESTIONS WITH ANSWERS
 AI System Design Interview Guide for AI/ML Engineers (2025-2026)
-================================================================================
+## 
 
-========================================
 2.1 DESIGN A CHATBOT SYSTEM (e.g., Customer Support Bot)
-========================================
 
 REQUIREMENTS GATHERING:
 - Users: 10M DAU, 100M messages/day
@@ -118,9 +122,8 @@ INTERVIEW TALKING POINTS:
 - Address multi-tenancy: different system prompts per customer
 
 
-========================================
-2.2 DESIGN A RAG PIPELINE AT SCALE
-========================================
+## 2.2 DESIGN A RAG PIPELINE AT SCALE
+
 
 REQUIREMENTS:
 - Document corpus: 10M documents, 100GB text
@@ -255,9 +258,8 @@ SCALING CONSIDERATIONS:
 - Index updates: near-real-time with write-ahead log
 
 
-========================================
-2.3 DESIGN A RECOMMENDATION SYSTEM WITH LLMs
-========================================
+## 2.3 DESIGN A RECOMMENDATION SYSTEM WITH LLMs
+
 
 ARCHITECTURE:
 
@@ -328,9 +330,8 @@ SCALING:
 - Batch reranking for non-real-time recommendations
 
 
-========================================
-2.4 DESIGN A DOCUMENT PROCESSING PIPELINE
-========================================
+## 2.4 DESIGN A DOCUMENT PROCESSING PIPELINE
+
 
 REQUIREMENTS:
 - Input: PDFs, images, Word docs, emails, scanned documents
@@ -390,9 +391,8 @@ SCALING STRATEGY:
 - Idempotent processing: safe to retry on failure
 
 
-========================================
-2.5 DESIGN A MULTI-AGENT WORKFLOW SYSTEM
-========================================
+## 2.5 DESIGN A MULTI-AGENT WORKFLOW SYSTEM
+
 
 REQUIREMENTS:
 - Multiple specialized AI agents collaborating on complex tasks
@@ -472,9 +472,8 @@ KEY DESIGN DECISIONS:
 5. Observability: Tracing agent decisions and interactions
 
 
-========================================
-2.6 DESIGN AN AI-POWERED SEARCH ENGINE
-========================================
+## 2.6 DESIGN AN AI-POWERED SEARCH ENGINE
+
 
 ARCHITECTURE:
 
@@ -532,9 +531,8 @@ SCALING:
 - Result caching: popular queries cached for 5-15 minutes
 
 
-========================================
-2.7 DESIGN A CONTENT MODERATION SYSTEM
-========================================
+## 2.7 DESIGN A CONTENT MODERATION SYSTEM
+
 
 ARCHITECTURE:
 
@@ -598,9 +596,8 @@ COST OPTIMIZATION:
 - LLM only for ambiguous cases (expensive but rare)
 - Human review is most expensive, minimize volume
 
-========================================
-2.8 DESIGN AN AI AGENT SYSTEM (2025-2026)
-========================================
+## 2.8 DESIGN AN AI AGENT SYSTEM (2025-2026)
+
 
 Q: Design an autonomous AI agent system that can handle complex,
 multi-step tasks with tool use.
@@ -677,6 +674,5 @@ FRAMEWORK SELECTION (2026):
 > multi-agent orchestration. Discuss your architectural decisions around
 > state management, tool calling patterns, and reliability mechanisms.
 
-========================================
-END OF SECTION 2 (Updated February 2026)
-========================================
+## END OF SECTION 2 (Updated February 2026)
+

@@ -1,11 +1,15 @@
-================================================================================
+---
+title: "Microservices for AI"
+layout: default
+parent: "System Design & Architecture"
+nav_order: 3
+---
+
 SECTION 3: MICROSERVICES FOR AI
 AI System Design Interview Guide for AI/ML Engineers (2025-2026)
-================================================================================
+## 
 
-========================================
 3.1 WHEN TO USE MICROSERVICES VS MONOLITH FOR AI
-========================================
 
 MONOLITH APPROACH (When to choose):
 
@@ -107,9 +111,8 @@ Rationale:
 - Best of both worlds
 
 
-========================================
-3.2 SERVICE COMMUNICATION PATTERNS
-========================================
+## 3.2 SERVICE COMMUNICATION PATTERNS
+
 
 A) SYNCHRONOUS (Request-Response):
 
@@ -217,9 +220,8 @@ D) SIDECAR PATTERN:
    Managed by service mesh (Istio, Linkerd)
 
 
-========================================
-3.3 API DESIGN FOR AI SERVICES
-========================================
+## 3.3 API DESIGN FOR AI SERVICES
+
 
 STANDARD AI API DESIGN PATTERNS:
 
@@ -329,9 +331,8 @@ API DESIGN BEST PRACTICES FOR AI:
    - 504: Inference timeout
 
 
-========================================
-3.4 VERSIONING ML MODELS IN PRODUCTION
-========================================
+## 3.4 VERSIONING ML MODELS IN PRODUCTION
+
 
 CHALLENGES:
 - Models change independently from code
@@ -436,6 +437,5 @@ BEST PRACTICES:
 4. Tag models with training data version
 5. Use model cards for documentation
 
-========================================
-END OF SECTION 3
-========================================
+## END OF SECTION 3
+

@@ -1,3 +1,10 @@
+---
+title: "FastAPI Development"
+layout: default
+parent: "AI Frameworks & Agents"
+nav_order: 9
+---
+
 # FastAPI & Backend Development for AI Engineers (2025-2026)
 ## Complete Interview Guide
 

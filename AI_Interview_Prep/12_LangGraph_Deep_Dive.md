@@ -1,3 +1,10 @@
+---
+title: "LangGraph"
+layout: default
+parent: "AI Frameworks & Agents"
+nav_order: 3
+---
+
 # LangGraph: The Definitive Interview Guide (2025-2026)
 ## Agent Orchestration Framework for Reliable AI Agents
 

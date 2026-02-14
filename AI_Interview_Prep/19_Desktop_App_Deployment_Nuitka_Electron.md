@@ -1,3 +1,10 @@
+---
+title: "Desktop App Deployment"
+layout: default
+parent: "Interview Practice & Career"
+nav_order: 6
+---
+
 # Desktop App Deployment: Nuitka, Electron & Cross-Platform Distribution
 ## Interview Guide for AI Engineers (2025-2026)
 

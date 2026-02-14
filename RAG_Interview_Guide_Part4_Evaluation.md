@@ -1,3 +1,10 @@
+---
+title: "Part 4 - Evaluation"
+layout: default
+parent: "RAG Systems"
+nav_order: 5
+---
+
 
 # RAG Interview Guide
 # PART 4: RAG EVALUATION AND THE RAGAS FRAMEWORK

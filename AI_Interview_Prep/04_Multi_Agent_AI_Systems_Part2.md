@@ -1,3 +1,10 @@
+---
+title: "Multi-Agent Systems Part 2"
+layout: default
+parent: "AI Frameworks & Agents"
+nav_order: 5
+---
+
 # Multi-Agent AI Systems - Complete Interview Guide (Part 2)
 # Memory Systems, Tool Use, Error Handling & Reliability
 # For AI Engineers 2025-2026

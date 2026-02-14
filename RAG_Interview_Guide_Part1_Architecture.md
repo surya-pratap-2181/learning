@@ -1,3 +1,10 @@
+---
+title: "Part 1 - Architecture"
+layout: default
+parent: "RAG Systems"
+nav_order: 2
+---
+
 
 # RAG (Retrieval Augmented Generation) - Comprehensive Interview Guide
 # PART 1: ARCHITECTURE FUNDAMENTALS

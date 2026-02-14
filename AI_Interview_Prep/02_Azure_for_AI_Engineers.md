@@ -1,10 +1,15 @@
-================================================================================
-  SECTION 2: AZURE FOR AI ENGINEERS - INTERVIEW QUESTIONS & ANSWERS (2025-2026)
-================================================================================
+---
+title: "Azure for AI Engineers"
+layout: default
+parent: "DevOps & Cloud Infrastructure"
+nav_order: 2
+---
 
-##############################################################################
-# 2.1  AZURE OPENAI SERVICE
-##############################################################################
+## SECTION 2: AZURE FOR AI ENGINEERS - INTERVIEW QUESTIONS & ANSWERS (2025-2026)
+
+
+## 2.1  AZURE OPENAI SERVICE
+
 
 Q1: What is Azure OpenAI Service and how does it differ from using OpenAI directly?
 
@@ -115,9 +120,8 @@ Custom content filters:
 - Blocklists: Define custom blocked terms/phrases.
 - Annotations: Get filter results in API response metadata for logging.
 
-##############################################################################
-# 2.2  AZURE AI STUDIO
-##############################################################################
+## 2.2  AZURE AI STUDIO
+
 
 Q4: What is Azure AI Studio and its key capabilities?
 
@@ -155,9 +159,8 @@ Prompt Flow components:
 - Prompt nodes: Templated prompts with variable substitution.
 - Variants: A/B test different prompt versions.
 
-##############################################################################
-# 2.3  AZURE FUNCTIONS
-##############################################################################
+## 2.3  AZURE FUNCTIONS
+
 
 Q5: How do you use Azure Functions for AI workloads?
 
@@ -223,9 +226,8 @@ Durable Functions for ML pipelines:
 - Human interaction: Wait for human approval in model deployment.
 - Monitor: Long-running model training with status polling.
 
-##############################################################################
-# 2.4  AZURE BLOB STORAGE
-##############################################################################
+## 2.4  AZURE BLOB STORAGE
+
 
 Q6: How is Azure Blob Storage used in AI/ML workflows?
 
@@ -272,9 +274,8 @@ Performance:
 - AzCopy: High-performance CLI for bulk data transfer.
 - Blob NFS v3: Mount as NFS for Linux-based training workloads.
 
-##############################################################################
-# 2.5  AZURE MACHINE LEARNING
-##############################################################################
+## 2.5  AZURE MACHINE LEARNING
+
 
 Q7: What are the key components of Azure Machine Learning?
 
@@ -387,9 +388,8 @@ Traffic splitting (Blue-Green):
   az ml online-endpoint update --name my-endpoint \
     --traffic "blue=90 green=10"
 
-##############################################################################
-# 2.6  AZURE COGNITIVE SERVICES (NOW AZURE AI SERVICES)
-##############################################################################
+## 2.6  AZURE COGNITIVE SERVICES (NOW AZURE AI SERVICES)
+
 
 Q9: What are Azure AI Services and their ML engineering use cases?
 
@@ -456,9 +456,8 @@ Key differentiator: Azure has exclusive access to OpenAI models (GPT-4, GPT-5,
 o-series) with enterprise features. AWS Bedrock offers multi-provider choice
 (Claude, Llama, Mistral, Nova, etc.).
 
-##############################################################################
-# 2.8  LATEST AZURE AI UPDATES (Late 2025 - Early 2026)
-##############################################################################
+## 2.8  LATEST AZURE AI UPDATES (Late 2025 - Early 2026)
+
 
 Q11: What is Microsoft Foundry and how does it replace Azure AI Studio?
 

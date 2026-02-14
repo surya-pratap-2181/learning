@@ -1,3 +1,10 @@
+---
+title: "Part 7 - Scaling"
+layout: default
+parent: "Vector Databases & Embeddings"
+nav_order: 8
+---
+
 # PART 7: SCALING VECTOR DATABASES
 
 ---

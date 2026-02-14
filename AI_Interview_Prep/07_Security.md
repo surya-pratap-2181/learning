@@ -1,11 +1,16 @@
-================================================================================
+---
+title: "Security"
+layout: default
+parent: "DevOps & Cloud Infrastructure"
+nav_order: 10
+render_with_liquid: false
+---
+
 SECTION 7: SECURITY FOR AI SYSTEMS
 AI System Design Interview Guide for AI/ML Engineers (2025-2026)
-================================================================================
+## 
 
-========================================
 7.1 PROMPT INJECTION DEFENSE
-========================================
 
 TYPES OF PROMPT INJECTION:
 
@@ -122,9 +127,8 @@ class OutputValidator:
    - Microsoft Presidio: PII detection and anonymization
 
 
-========================================
-7.2 DATA PRIVACY
-========================================
+## 7.2 DATA PRIVACY
+
 
 PRINCIPLES:
 1. Data minimization: collect only what's needed
@@ -194,9 +198,8 @@ COMPLIANCE CONSIDERATIONS:
 - SOC 2: Security controls, audit trails
 
 
-========================================
-7.3 PII HANDLING
-========================================
+## 7.3 PII HANDLING
+
 
 PII DETECTION METHODS:
 
@@ -247,9 +250,8 @@ PII HANDLING STRATEGIES:
    Used for: analytics, model training data
 
 
-========================================
-7.4 API SECURITY FOR AI SERVICES
-========================================
+## 7.4 API SECURITY FOR AI SERVICES
+
 
 SECURITY LAYERS:
 
@@ -332,9 +334,8 @@ SECURE MODEL SERVING:
 - Regular security audits and penetration testing
 
 
-========================================
-7.5 RATE LIMITING FOR SECURITY
-========================================
+## 7.5 RATE LIMITING FOR SECURITY
+
 
 SECURITY-FOCUSED RATE LIMITING:
 
@@ -390,6 +391,5 @@ class AdaptiveRateLimiter:
    +----(success rate > 80%) <--- [Half-Open (allow 10%)]
 ```
 
-========================================
-END OF SECTION 7
-========================================
+## END OF SECTION 7
+

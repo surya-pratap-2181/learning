@@ -1,3 +1,10 @@
+---
+title: "Data Structures & Algorithms"
+layout: default
+parent: "Python & Coding"
+nav_order: 3
+---
+
 # Section 3: Data Structures, Algorithms & Memory Management for AI Engineers
 
 ---

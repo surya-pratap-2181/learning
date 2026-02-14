@@ -1,3 +1,10 @@
+---
+title: "Fine-Tuning LLMs"
+layout: default
+parent: "LLM & AI Fundamentals"
+nav_order: 2
+---
+
 # Fine-Tuning LLMs: Complete Interview Guide (2025-2026)
 ## LoRA, QLoRA, PEFT, RLHF, and Production Fine-Tuning
 

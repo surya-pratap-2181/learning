@@ -1,3 +1,10 @@
+---
+title: "Part 6 - Model Selection"
+layout: default
+parent: "Vector Databases & Embeddings"
+nav_order: 7
+---
+
 # PART 6: EMBEDDING MODEL SELECTION
 
 ---

@@ -1,3 +1,10 @@
+---
+title: "Part 3 - Chunking"
+layout: default
+parent: "RAG Systems"
+nav_order: 4
+---
+
 
 # RAG Interview Guide
 # PART 3: CHUNKING STRATEGIES IN DETAIL

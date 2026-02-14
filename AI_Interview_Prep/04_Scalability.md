@@ -1,11 +1,15 @@
-================================================================================
+---
+title: "Scalability"
+layout: default
+parent: "System Design & Architecture"
+nav_order: 4
+---
+
 SECTION 4: SCALABILITY FOR AI SYSTEMS
 AI System Design Interview Guide for AI/ML Engineers (2025-2026)
-================================================================================
+## 
 
-========================================
 4.1 HORIZONTAL SCALING
-========================================
 
 DEFINITION: Adding more machines/instances to handle more load.
 
@@ -53,9 +57,8 @@ C) EMBEDDING SERVICE SCALING:
    - Scale instances based on queue depth
 
 
-========================================
-4.2 VERTICAL SCALING
-========================================
+## 4.2 VERTICAL SCALING
+
 
 DEFINITION: Using more powerful hardware (bigger GPU, more RAM).
 
@@ -96,9 +99,8 @@ Model Size:
 ```
 
 
-========================================
-4.3 AUTO-SCALING BASED ON INFERENCE LOAD
-========================================
+## 4.3 AUTO-SCALING BASED ON INFERENCE LOAD
+
 
 METRICS FOR AUTO-SCALING DECISIONS:
 
@@ -218,9 +220,8 @@ CHALLENGES:
 - Predictive scaling: use traffic patterns to pre-scale before peak
 
 
-========================================
-4.4 GPU ALLOCATION STRATEGIES
-========================================
+## 4.4 GPU ALLOCATION STRATEGIES
+
 
 A) DEDICATED GPU ALLOCATION:
    - Each model gets dedicated GPU(s)
@@ -293,9 +294,8 @@ GPU ALLOCATION DECISION MATRIX:
 ```
 
 
-========================================
-4.5 BATCH INFERENCE VS REAL-TIME INFERENCE
-========================================
+## 4.5 BATCH INFERENCE VS REAL-TIME INFERENCE
+
 
 REAL-TIME INFERENCE:
 ```
@@ -373,6 +373,5 @@ Batch (A100 spot instance):
   - 30x cheaper than real-time
 ```
 
-========================================
-END OF SECTION 4
-========================================
+## END OF SECTION 4
+

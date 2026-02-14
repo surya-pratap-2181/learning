@@ -1,3 +1,10 @@
+---
+title: "Part 3 - Database Comparison"
+layout: default
+parent: "Vector Databases & Embeddings"
+nav_order: 4
+---
+
 # PART 3: VECTOR DATABASE COMPARISON
 
 ---

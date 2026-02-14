@@ -1,3 +1,10 @@
+---
+title: "Part 5 - Interview Questions"
+layout: default
+parent: "RAG Systems"
+nav_order: 6
+---
+
 
 # RAG Interview Guide
 # PART 5: COMMON INTERVIEW QUESTIONS WITH DETAILED ANSWERS AND CODE

@@ -1,3 +1,10 @@
+---
+title: "Multi-Agent Systems Part 3"
+layout: default
+parent: "AI Frameworks & Agents"
+nav_order: 6
+---
+
 # Multi-Agent AI Systems - Complete Interview Guide (Part 3)
 # Real-World Use Cases, Interview Questions, Framework Comparison
 # For AI Engineers 2025-2026

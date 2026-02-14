@@ -1,10 +1,15 @@
-================================================================================
-  SECTION 6: MLOps - INTERVIEW QUESTIONS & ANSWERS (2025-2026)
-================================================================================
+---
+title: "MLOps"
+layout: default
+parent: "DevOps & Cloud Infrastructure"
+nav_order: 7
+---
 
-##############################################################################
-# 6.1  MODEL REGISTRY
-##############################################################################
+## SECTION 6: MLOps - INTERVIEW QUESTIONS & ANSWERS (2025-2026)
+
+
+## 6.1  MODEL REGISTRY
+
 
 Q1: What is a model registry and why is it essential for MLOps?
 
@@ -102,9 +107,8 @@ SageMaker Pipelines approval:
       else_steps=[notify_failure_step]
   )
 
-##############################################################################
-# 6.2  EXPERIMENT TRACKING
-##############################################################################
+## 6.2  EXPERIMENT TRACKING
+
 
 Q3: What is experiment tracking and which tools are commonly used?
 
@@ -186,9 +190,8 @@ Best practices:
 - Auto-log when possible (mlflow.autolog()).
 - Link experiments to Git commits and data versions.
 
-##############################################################################
-# 6.3  MODEL MONITORING
-##############################################################################
+## 6.3  MODEL MONITORING
+
 
 Q4: How do you monitor ML models in production?
 
@@ -264,9 +267,8 @@ Alert thresholds:
   - Accuracy drop > 5%: Trigger retraining pipeline.
   - Latency p99 > SLA: Scale up or optimize.
 
-##############################################################################
-# 6.4  DATA VERSIONING
-##############################################################################
+## 6.4  DATA VERSIONING
+
 
 Q5: How do you implement data versioning for ML?
 
@@ -353,9 +355,8 @@ Best practices:
 - Hash data files for integrity verification.
 - Document data changes in data cards (what changed, why, impact).
 
-##############################################################################
-# 6.5  FEATURE STORES
-##############################################################################
+## 6.5  FEATURE STORES
+
 
 Q6: What is a feature store and why is it important for MLOps?
 

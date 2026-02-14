@@ -1,3 +1,10 @@
+---
+title: "Data Engineering"
+layout: default
+parent: "Interview Practice & Career"
+nav_order: 7
+---
+
 # Data Engineering: PySpark, Databricks & Snowflake Interview Guide (2025-2026)
 ## For AI Engineers with Production Data Pipeline Experience
 

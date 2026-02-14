@@ -1,3 +1,10 @@
+---
+title: "Part 2 - Search Algorithms"
+layout: default
+parent: "Vector Databases & Embeddings"
+nav_order: 3
+---
+
 # PART 2: VECTOR SEARCH ALGORITHMS
 
 ---

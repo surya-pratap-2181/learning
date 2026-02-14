@@ -1,10 +1,15 @@
-================================================================================
-  SECTION 7: COST OPTIMIZATION FOR AI - QUESTIONS & ANSWERS (2025-2026)
-================================================================================
+---
+title: "Cost Optimization Advanced"
+layout: default
+parent: "DevOps & Cloud Infrastructure"
+nav_order: 9
+---
 
-##############################################################################
-# 7.1  SPOT INSTANCES FOR TRAINING
-##############################################################################
+## SECTION 7: COST OPTIMIZATION FOR AI - QUESTIONS & ANSWERS (2025-2026)
+
+
+## 7.1  SPOT INSTANCES FOR TRAINING
+
 
 Q1: How do you use spot instances to reduce ML training costs?
 
@@ -95,9 +100,8 @@ Azure Spot VMs:
       --max-instances 4 \
       --tier low_priority  # Spot equivalent in Azure ML
 
-##############################################################################
-# 7.2  RESERVED INSTANCES FOR INFERENCE
-##############################################################################
+## 7.2  RESERVED INSTANCES FOR INFERENCE
+
 
 Q2: How do you use reserved instances / savings plans for ML inference?
 
@@ -141,9 +145,8 @@ Sizing strategy:
   3. Use spot for burst capacity if latency-tolerant.
   4. Review utilization quarterly and adjust reservations.
 
-##############################################################################
-# 7.3  AUTO-SCALING GPU CLUSTERS
-##############################################################################
+## 7.3  AUTO-SCALING GPU CLUSTERS
+
 
 Q3: How do you auto-scale GPU clusters for AI workloads?
 
@@ -248,9 +251,8 @@ Scaling challenges for GPUs:
 - Cost of idle GPUs: $1-35/hr wasted if not utilized.
   Mitigation: Scale to zero with KEDA, aggressive scale-down policies.
 
-##############################################################################
-# 7.4  SERVERLESS VS ALWAYS-ON TRADE-OFFS
-##############################################################################
+## 7.4  SERVERLESS VS ALWAYS-ON TRADE-OFFS
+
 
 Q4: When should you use serverless vs always-on for AI workloads?
 
@@ -313,9 +315,8 @@ Hybrid approach:
   - Burst overflow: Serverless or spot instances.
   - Non-critical: Async queue + serverless processing.
 
-##############################################################################
-# 7.5  ADDITIONAL COST OPTIMIZATION STRATEGIES
-##############################################################################
+## 7.5  ADDITIONAL COST OPTIMIZATION STRATEGIES
+
 
 Q5: What are other key cost optimization strategies for AI workloads?
 

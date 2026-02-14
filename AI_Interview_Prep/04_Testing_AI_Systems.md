@@ -1,3 +1,11 @@
+---
+title: "Testing AI Systems"
+layout: default
+parent: "DevOps & Cloud Infrastructure"
+nav_order: 11
+render_with_liquid: false
+---
+
 # Section 4: Testing AI Systems -- pytest, Mocking, Pipelines, Snapshots
 
 ---

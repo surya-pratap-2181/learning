@@ -1,13 +1,18 @@
-================================================================================
-  SECTION 8: COMMON INTERVIEW QUESTIONS WITH DETAILED ANSWERS (2025-2026)
-================================================================================
+---
+title: "Common Interview Questions"
+layout: default
+parent: "Interview Practice & Career"
+nav_order: 2
+---
+
+## SECTION 8: COMMON INTERVIEW QUESTIONS WITH DETAILED ANSWERS (2025-2026)
+
 
 These are scenario-based and system design questions frequently asked in
 Cloud/DevOps for AI Engineer interviews.
 
-##############################################################################
-# QUESTION 1: SYSTEM DESIGN
-##############################################################################
+## QUESTION 1: SYSTEM DESIGN
+
 
 Q: Design a production ML inference system that serves a large language model
    (LLM) with <200ms latency, handles 10,000 requests per minute, and costs
@@ -66,9 +71,8 @@ Key design decisions:
    - Rolling updates for model changes.
    - Health checks every 10 seconds.
 
-##############################################################################
-# QUESTION 2: MLOPS PIPELINE
-##############################################################################
+## QUESTION 2: MLOPS PIPELINE
+
 
 Q: Describe how you would build an end-to-end MLOps pipeline for a
    recommendation model that retrains daily on new user interaction data.
@@ -147,9 +151,8 @@ Tools stack:
   - IaC: Terraform.
   - CI/CD: GitHub Actions.
 
-##############################################################################
-# QUESTION 3: CONTAINERIZATION & DEPLOYMENT
-##############################################################################
+## QUESTION 3: CONTAINERIZATION & DEPLOYMENT
+
 
 Q: How would you containerize and deploy a computer vision model that
    processes images in real-time on Kubernetes?
@@ -246,9 +249,8 @@ Answer:
    - Min replicas: 2 (availability).
    - Max replicas: 10.
 
-##############################################################################
-# QUESTION 4: SECURITY
-##############################################################################
+## QUESTION 4: SECURITY
+
 
 Q: How do you secure an AI/ML pipeline end-to-end on AWS?
 
@@ -300,9 +302,8 @@ Answer:
    - Data lineage tracking: Know which data trained which model.
    - Audit trail: Complete history of model versions and deployments.
 
-##############################################################################
-# QUESTION 5: TROUBLESHOOTING
-##############################################################################
+## QUESTION 5: TROUBLESHOOTING
+
 
 Q: Your production ML model's latency has increased from 100ms to 500ms
    over the past week. How do you diagnose and fix this?
@@ -363,9 +364,8 @@ Investigation steps:
    - Regular load testing in staging.
    - Model optimization (quantization, pruning).
 
-##############################################################################
-# QUESTION 6: COST SCENARIO
-##############################################################################
+## QUESTION 6: COST SCENARIO
+
 
 Q: Your team is spending $200,000/month on AI infrastructure. The CEO wants
    to cut costs by 40% without impacting service quality. What do you do?
@@ -422,9 +422,8 @@ Phase 3 - Long-term (Week 6-12, target remaining savings):
 
 Total expected savings: $80-100K/month (40-50% reduction).
 
-##############################################################################
-# QUESTION 7: AWS vs AZURE DECISION
-##############################################################################
+## QUESTION 7: AWS vs AZURE DECISION
+
 
 Q: Your company is choosing between AWS and Azure for a new AI platform.
    What factors would you consider?
@@ -461,9 +460,8 @@ Answer:
    - Container: EKS (more adoption) vs AKS (easier Azure AD integration).
    - Serverless: Lambda (more mature) vs Functions (good enough).
 
-##############################################################################
-# QUESTION 8: KUBERNETES FOR ML
-##############################################################################
+## QUESTION 8: KUBERNETES FOR ML
+
 
 Q: How do you set up Kubernetes for ML model serving with proper resource
    management, scaling, and monitoring?
@@ -548,9 +546,8 @@ Answer:
      - port: metrics
        interval: 15s
 
-##############################################################################
-# QUESTION 9: RAG SYSTEM DESIGN
-##############################################################################
+## QUESTION 9: RAG SYSTEM DESIGN
+
 
 Q: Design a production RAG (Retrieval-Augmented Generation) system for a
    company's internal knowledge base with 10 million documents.
@@ -615,9 +612,8 @@ Components:
    - Compute (API servers, reranker): ~$2,000/month.
    - Total: ~$15,000/month.
 
-##############################################################################
-# QUESTION 10: BEHAVIORAL / SCENARIO QUESTIONS
-##############################################################################
+## QUESTION 10: BEHAVIORAL / SCENARIO QUESTIONS
+
 
 Q: Tell me about a time you reduced ML infrastructure costs significantly.
 
@@ -683,9 +679,8 @@ Promotion flow:
 Key principle: The container image and model artifact promoted to production
 should be EXACTLY what was tested in staging. Never rebuild for production.
 
-##############################################################################
-# QUICK REFERENCE: TOP 30 RAPID-FIRE QUESTIONS
-##############################################################################
+## QUICK REFERENCE: TOP 30 RAPID-FIRE QUESTIONS
+
 
 1. What is SageMaker? -> Fully managed ML platform for build, train, deploy.
 2. What is Bedrock? -> Managed service for foundation model APIs.

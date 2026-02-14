@@ -1,3 +1,10 @@
+---
+title: "LangChain Framework"
+layout: default
+parent: "AI Frameworks & Agents"
+nav_order: 2
+---
+
 # LangChain Framework: Complete Interview Guide (2025-2026)
 ## For AI Engineers Building Production LLM Applications
 

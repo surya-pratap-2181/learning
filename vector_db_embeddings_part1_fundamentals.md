@@ -1,3 +1,10 @@
+---
+title: "Part 1 - Fundamentals"
+layout: default
+parent: "Vector Databases & Embeddings"
+nav_order: 2
+---
+
 # Vector Databases & Embeddings - Complete Interview Guide for AI Engineers (2025-2026)
 
 # PART 1: EMBEDDING FUNDAMENTALS

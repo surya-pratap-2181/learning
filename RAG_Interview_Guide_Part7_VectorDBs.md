@@ -1,3 +1,10 @@
+---
+title: "Part 7 - Vector DBs"
+layout: default
+parent: "RAG Systems"
+nav_order: 8
+---
+
 
 # RAG Interview Guide
 # PART 7: VECTOR DATABASE COMPARISON

@@ -1,3 +1,10 @@
+---
+title: "Part 6 - Challenges"
+layout: default
+parent: "RAG Systems"
+nav_order: 7
+---
+
 
 # RAG Interview Guide
 # PART 6: REAL-WORLD CHALLENGES AND SOLUTIONS

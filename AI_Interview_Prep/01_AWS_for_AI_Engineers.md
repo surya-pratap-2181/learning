@@ -1,10 +1,15 @@
-================================================================================
-  SECTION 1: AWS FOR AI ENGINEERS - INTERVIEW QUESTIONS & ANSWERS (2025-2026)
-================================================================================
+---
+title: "AWS for AI Engineers"
+layout: default
+parent: "DevOps & Cloud Infrastructure"
+nav_order: 1
+---
 
-##############################################################################
-# 1.1  AMAZON SAGEMAKER
-##############################################################################
+## SECTION 1: AWS FOR AI ENGINEERS - INTERVIEW QUESTIONS & ANSWERS (2025-2026)
+
+
+## 1.1  AMAZON SAGEMAKER
+
 
 Q1: What is Amazon SageMaker and what are its core components?
 
@@ -172,9 +177,8 @@ Setup:
 
 Output: Violation reports in S3, CloudWatch metrics, SNS notifications.
 
-##############################################################################
-# 1.2  AMAZON BEDROCK
-##############################################################################
+## 1.2  AMAZON BEDROCK
+
 
 Q7: What is Amazon Bedrock and how is it used?
 
@@ -261,9 +265,8 @@ Advanced features:
 - Prompt template customization: Override default orchestration prompts
 - Tracing: Full visibility into agent reasoning steps
 
-##############################################################################
-# 1.3  EC2 FOR GPU INFERENCE
-##############################################################################
+## 1.3  EC2 FOR GPU INFERENCE
+
 
 Q10: Which EC2 instance types are used for AI/ML workloads?
 
@@ -322,9 +325,8 @@ Optimization strategies:
    - KV-cache optimization for LLMs (PagedAttention via vLLM).
    - Model sharding across multiple GPUs using tensor parallelism.
 
-##############################################################################
-# 1.4  S3 FOR MODEL STORAGE
-##############################################################################
+## 1.4  S3 FOR MODEL STORAGE
+
 
 Q12: How do you use S3 for ML model storage and data management?
 
@@ -358,9 +360,8 @@ Storage classes for ML:
 - S3 Glacier Instant Retrieval: Archived models needing immediate access.
 - S3 Glacier Deep Archive: Long-term compliance storage.
 
-##############################################################################
-# 1.5  AWS LAMBDA FOR SERVERLESS AI
-##############################################################################
+## 1.5  AWS LAMBDA FOR SERVERLESS AI
+
 
 Q13: How can AWS Lambda be used for AI/ML workloads?
 
@@ -437,9 +438,8 @@ Key best practices:
 - Quantize model to INT8 to reduce size and improve speed.
 - Set memory to 3-6GB for ML workloads (CPU scales with memory).
 
-##############################################################################
-# 1.6  ECS/EKS FOR CONTAINER ORCHESTRATION
-##############################################################################
+## 1.6  ECS/EKS FOR CONTAINER ORCHESTRATION
+
 
 Q15: Compare ECS vs EKS for AI/ML workloads.
 
@@ -482,9 +482,8 @@ Scaling strategies:
 - KEDA (Kubernetes Event Driven Autoscaling): Scale based on queue depth,
   HTTP requests, custom metrics.
 
-##############################################################################
-# 1.7  API GATEWAY FOR AI SERVICES
-##############################################################################
+## 1.7  API GATEWAY FOR AI SERVICES
+
 
 Q16: How do you use API Gateway to expose AI/ML models?
 
@@ -519,9 +518,8 @@ Key configurations:
 - Custom authorizers: JWT/OAuth2 validation via Lambda authorizer.
 - WebSocket API: For streaming inference results (e.g., LLM token streaming).
 
-##############################################################################
-# 1.8  CLOUDWATCH FOR AI MONITORING
-##############################################################################
+## 1.8  CLOUDWATCH FOR AI MONITORING
+
 
 Q17: How do you monitor AI/ML workloads with CloudWatch?
 
@@ -566,9 +564,8 @@ Integration with other services:
 - EventBridge: Trigger automated remediation (e.g., scale up, retrain).
 - X-Ray: Distributed tracing for complex inference pipelines.
 
-##############################################################################
-# 1.9  IAM FOR AI SERVICES
-##############################################################################
+## 1.9  IAM FOR AI SERVICES
+
 
 Q18: How do you configure IAM for AI/ML workloads on AWS?
 
@@ -636,9 +633,8 @@ Security best practices:
 - Service Control Policies (SCPs): Restrict GPU instance types to prevent cost
   overruns (e.g., deny p5 instances in non-production accounts).
 
-##############################################################################
-# 1.8  LATEST AWS AI SERVICES UPDATE (Late 2025 - Early 2026)
-##############################################################################
+## 1.8  LATEST AWS AI SERVICES UPDATE (Late 2025 - Early 2026)
+
 
 Q20: What is Amazon Bedrock AgentCore and what are its new capabilities?
 
