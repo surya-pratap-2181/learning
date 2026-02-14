@@ -5,6 +5,10 @@ baseurl: "/learning"
 
 theme: just-the-docs
 
+# Silence Sass deprecation warnings from theme dependencies
+sass:
+  quiet_deps: true
+
 # Search settings
 search_enabled: true
 search.heading_level: 3
@@ -29,8 +33,22 @@ enable_copy_code_button: true
 back_to_top: true
 back_to_top_text: "Back to top"
 
-# Color scheme
+# Color scheme - enable toggle between light and dark
 color_scheme: dark
+# Enable light/dark toggle
+callouts:
+  warning:
+    title: Warning
+    color: yellow
+  tip:
+    title: Tip
+    color: green
+  experience:
+    title: Your Experience
+    color: blue
+
+# Table of contents on each page
+heading_anchors: true
 
 # Navigation
 nav_sort: case_sensitive
@@ -41,3 +59,4 @@ exclude:
   - .claude/
   - node_modules/
   - vendor/
+  - add_frontmatter.py
