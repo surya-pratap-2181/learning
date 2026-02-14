@@ -467,5 +467,79 @@ class AIRateLimiter:
 ```
 
 ========================================
-END OF SECTION 1
+1.8 AI GATEWAY PATTERNS (2025-2026)
+========================================
+
+AI Gateways have emerged as a critical infrastructure layer for production
+LLM applications. They sit between clients and LLM providers, providing:
+
+CORE CAPABILITIES:
+- Model Routing: Route requests to optimal model based on task type, cost,
+  latency requirements. E.g., route simple queries to GPT-4o mini, complex
+  to Claude Opus 4.5, multimodal to Gemini 3 Pro.
+- Fallback & Retry: Automatic failover between providers if one is down or
+  rate-limited. Circuit breaker patterns for provider health.
+- Cost Management: Track token usage per user/team, enforce budgets, optimize
+  model selection for cost vs quality tradeoffs.
+- Caching: Semantic caching -- use embedding similarity to match new queries
+  to cached responses (threshold ~0.95). Reduces costs by 30-60%.
+- Observability: Log all requests/responses, latency tracking, token usage
+  analytics, quality metrics.
+- Security: PII redaction before sending to providers, content filtering,
+  prompt injection detection, audit logging.
+
+SEMANTIC CACHING PATTERN:
+```
+User Query → Embed Query → Search Cache (cosine similarity)
+                                    |
+                        Similarity > 0.95? ─── Yes ──→ Return Cached
+                                    |
+                                   No
+                                    |
+                           Call LLM Provider
+                                    |
+                         Cache Response + Embedding
+                                    |
+                          Return Response
+```
+
+MODEL ROUTING STRATEGIES:
+```
+Simple Classification Router:
+  - Input analysis (token count, has images, complexity score)
+  - Route to appropriate model tier
+  - Example: length < 100 tokens → mini model
+             has_image → multimodal model
+             complexity_score > 0.8 → frontier model
+
+Cost-Optimized Router:
+  - Start with cheapest model
+  - Evaluate response quality (confidence score, self-check)
+  - If quality insufficient, escalate to more expensive model
+  - "Cascade" pattern: mini → standard → frontier
+```
+
+POPULAR AI GATEWAY TOOLS (2025):
+- LiteLLM: Open-source, unified API for 100+ LLM providers
+- Portkey: Commercial AI gateway with observability
+- Helicone: Open-source LLM observability platform
+- LangSmith: LangChain's observability and testing platform
+- Braintrust: LLM eval and observability platform
+
+LLM OBSERVABILITY (2025-2026):
+Key metrics to track in production LLM systems:
+- Latency: p50, p95, p99 response times, time-to-first-token (TTFT)
+- Quality: User satisfaction, thumbs up/down, automated eval scores
+- Cost: Tokens per request, cost per user, cost per feature
+- Reliability: Error rates, timeout rates, provider availability
+- Safety: Content filter trigger rates, prompt injection attempts
+
+> YOUR EXPERIENCE: At RavianAI, building a production agentic AI platform
+> requires all these patterns: model routing for cost optimization, semantic
+> caching for repeated queries, observability for debugging agent workflows,
+> and gateway-level security. This is directly relevant to your platform
+> architecture work.
+
+========================================
+END OF SECTION 1 (Updated February 2026)
 ========================================

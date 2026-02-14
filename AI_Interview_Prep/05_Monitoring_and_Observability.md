@@ -423,5 +423,75 @@ OBSERVABILITY STACK:
 ```
 
 ========================================
-END OF SECTION 5
+5.6 LLM-SPECIFIC OBSERVABILITY (2025-2026)
+========================================
+
+New tools and standards have emerged specifically for LLM application
+monitoring, beyond traditional APM.
+
+LLM OBSERVABILITY PLATFORMS:
+
+| Tool | Type | Key Feature | Best For |
+|------|------|-------------|----------|
+| LangSmith | Commercial | LangChain ecosystem, tracing | LangChain/LangGraph apps |
+| Langfuse | Open Source | Self-hostable, OpenTelemetry | Privacy-conscious, self-hosted |
+| Phoenix (Arize) | Open Source | Embeddings analysis, evals | ML teams, experimentation |
+| Helicone | Open Source | Gateway-based, one-line setup | Quick start, cost tracking |
+| Braintrust | Commercial | Eval-first, CI/CD integration | Prompt regression testing |
+| Portkey | Commercial | AI gateway + observability | Multi-provider routing |
+
+OPENTELEMETRY FOR LLM APPLICATIONS:
+
+Two emerging standards for GenAI semantic conventions:
+- OpenLLMetry (by Traceloop): OTel instrumentation for LLM frameworks
+- OpenInference (by Arize): Semantic conventions for ML observability
+
+```python
+# Example: OpenTelemetry tracing for LLM calls
+from opentelemetry import trace
+from opentelemetry.sdk.trace import TracerProvider
+
+tracer = trace.get_tracer("llm-app")
+
+@tracer.start_as_current_span("llm_call")
+async def call_llm(prompt: str, model: str):
+    span = trace.get_current_span()
+    span.set_attribute("gen_ai.system", "openai")
+    span.set_attribute("gen_ai.request.model", model)
+    span.set_attribute("gen_ai.usage.prompt_tokens", token_count)
+
+    response = await client.chat.completions.create(...)
+
+    span.set_attribute("gen_ai.usage.completion_tokens", resp_tokens)
+    span.set_attribute("gen_ai.response.finish_reason", "stop")
+    return response
+```
+
+KEY LLM METRICS TO TRACK:
+- Time-to-First-Token (TTFT): Critical for streaming UX
+- Tokens per Second (TPS): Generation throughput
+- Cost per Request: Track across different model tiers
+- Cache Hit Rate: For semantic caching effectiveness
+- Tool Call Success Rate: For agentic applications
+- Evaluation Scores: Automated quality metrics per request
+
+AGENT WORKFLOW TRACING:
+For multi-step agent systems, trace the full execution:
+```
+Trace: "Research and summarize AI trends"
+  ├── Span: Planning (120ms, 450 tokens)
+  ├── Span: Tool Call - web_search (2.1s)
+  ├── Span: Tool Call - web_search (1.8s)
+  ├── Span: Analysis (3.2s, 2100 tokens)
+  ├── Span: Tool Call - write_document (0.5s)
+  └── Span: Final Response (1.1s, 890 tokens)
+  Total: 8.8s, 3440 tokens, $0.034
+```
+
+> YOUR EXPERIENCE: At RavianAI, monitoring agentic AI workflows requires
+> this level of observability -- tracing each agent step, tracking tool call
+> success rates, and monitoring costs across different model providers.
+
+========================================
+END OF SECTION 5 (Updated February 2026)
 ========================================

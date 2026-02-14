@@ -599,5 +599,84 @@ COST OPTIMIZATION:
 - Human review is most expensive, minimize volume
 
 ========================================
-END OF SECTION 2
+2.8 DESIGN AN AI AGENT SYSTEM (2025-2026)
+========================================
+
+Q: Design an autonomous AI agent system that can handle complex,
+multi-step tasks with tool use.
+
+ARCHITECTURE:
+```
+[User Request]
+      |
+[Agent Controller / Orchestrator]
+      |
+      ├── [Planning Module]
+      │     └── Task decomposition, goal tracking
+      ├── [Memory Module]
+      │     ├── Short-term (conversation context)
+      │     ├── Long-term (vector DB for past interactions)
+      │     └── Working memory (current task state)
+      ├── [Tool Execution Module]
+      │     ├── MCP Servers (standardized tool access)
+      │     ├── Function Calling (provider-native)
+      │     └── Custom API integrations
+      ├── [Safety / Guardrails]
+      │     ├── Input validation
+      │     ├── Output filtering
+      │     └── Action approval (HITL for risky operations)
+      └── [Observation / Evaluation]
+            ├── Step-level logging
+            ├── Token/cost tracking
+            └── Quality metrics
+```
+
+KEY DESIGN DECISIONS:
+
+1. Agent Pattern Selection:
+   - ReAct (Reason + Act): Best for single-agent, tool-using tasks
+   - Plan-and-Execute: Best for complex multi-step tasks
+   - Multi-Agent Supervisor: Best for tasks requiring diverse expertise
+   - Swarm: Best for dynamic, peer-to-peer agent collaboration
+
+2. Tool Integration Strategy:
+   - MCP (Model Context Protocol): Universal standard, reusable servers
+   - Native Function Calling: Per-provider (OpenAI, Claude, Gemini)
+   - A2A Protocol: For agent-to-agent communication
+   - Composio: 800+ pre-built tool integrations
+
+3. State Management:
+   - LangGraph checkpointing for graph-based agents
+   - Redis for ephemeral state across distributed agents
+   - Vector DB for long-term memory (Pinecone, Qdrant, pgvector)
+
+4. Reliability Patterns:
+   - Max iteration limits to prevent infinite loops
+   - Timeout per step and per task
+   - Fallback models (if primary provider fails)
+   - Human-in-the-loop for high-stakes actions
+
+5. Observability:
+   - LangSmith / Langfuse for tracing agent steps
+   - Token usage and cost per agent run
+   - Success/failure rates per tool
+   - Latency per step breakdown
+
+FRAMEWORK SELECTION (2026):
+| Use Case | Best Framework |
+|----------|---------------|
+| Complex workflows, precise control | LangGraph |
+| Multi-agent conversations | AG2 / AutoGen |
+| Role-based teams, business flows | CrewAI |
+| Simple OpenAI-only agents | OpenAI Agents SDK |
+| Enterprise AWS deployments | Bedrock Agents (AgentCore) |
+| Enterprise Azure deployments | Foundry Agent Service |
+
+> YOUR EXPERIENCE: At RavianAI, you built exactly this -- a production
+> agentic AI platform with WebSocket communication, tool integration, and
+> multi-agent orchestration. Discuss your architectural decisions around
+> state management, tool calling patterns, and reliability mechanisms.
+
+========================================
+END OF SECTION 2 (Updated February 2026)
 ========================================

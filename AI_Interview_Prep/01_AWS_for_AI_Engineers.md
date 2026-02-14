@@ -635,3 +635,57 @@ Security best practices:
 - SageMaker network isolation: prevent training containers from internet access.
 - Service Control Policies (SCPs): Restrict GPU instance types to prevent cost
   overruns (e.g., deny p5 instances in non-production accounts).
+
+##############################################################################
+# 1.8  LATEST AWS AI SERVICES UPDATE (Late 2025 - Early 2026)
+##############################################################################
+
+Q20: What is Amazon Bedrock AgentCore and what are its new capabilities?
+
+Answer:
+Amazon Bedrock AgentCore (announced at re:Invent 2025) is a comprehensive
+platform for building, deploying, and governing AI agents at scale.
+
+Key Components:
+- AgentCore Gateway: Intercepts every tool call in real time, ensuring agents
+  stay within defined boundaries.
+- AgentCore Policy (preview): Create policies using natural language that
+  automatically convert to Cedar (AWS open-source policy language). Enforces
+  guardrails on what agents can and cannot do.
+- AgentCore Evaluations (preview): 13 built-in evaluators for common quality
+  dimensions including helpfulness, tool selection accuracy, and correctness.
+- AgentCore Memory: Now includes episodic memory, enabling agents to learn
+  and adapt from past interactions.
+- AgentCore Runtime: Supports bidirectional streaming for natural conversations
+  where agents simultaneously listen and respond.
+
+Q21: What is Amazon Nova and the latest model expansion?
+
+Answer:
+Amazon Nova 2 (announced re:Invent 2025) is Amazon's next-generation foundation
+model family, trained by Amazon:
+- Nova 2 Pro: Competitive with GPT-4o class models
+- Nova 2 Lite: Fast and cost-effective for production workloads
+- Nova models are available exclusively through Bedrock
+
+Bedrock also added 18 fully managed open weight models (Dec 2025), the largest
+expansion of models to date, including Llama 4, Mistral, and community models.
+
+Q22: What are the latest Bedrock features for AI agents?
+
+Answer:
+Key 2025-2026 updates:
+- Responses API: Server-side tool use -- agents can perform web search, code
+  execution, and database updates within AWS security boundaries.
+- Prompt Caching: 1-hour TTL option for caching to reduce costs and improve
+  performance for long-running, multi-turn agent workflows.
+- Reinforcement Fine-tuning: Delivers 66% accuracy gains on average over base
+  models. Available for select models through Bedrock.
+- Agent Workflows: Enhanced orchestration for complex multi-step agent tasks.
+- Multi-Agent Collaboration: Support for supervisor-worker patterns natively.
+
+> YOUR EXPERIENCE: At RavianAI, building agentic AI platforms on AWS means
+> leveraging Bedrock AgentCore for production-grade agent deployment with
+> built-in policy controls and evaluation. At MathCo, you used AWS services
+> (EMR, Lambda, S3) for data engineering -- Bedrock Knowledge Bases would
+> naturally extend this to RAG-powered analytics.

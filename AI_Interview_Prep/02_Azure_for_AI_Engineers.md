@@ -452,6 +452,72 @@ Comparison matrix:
 | IaC                 | CloudFormation, CDK          | ARM Templates, Bicep           |
 | IAM                 | IAM (policies + roles)       | Azure AD + RBAC                |
 
-Key differentiator: Azure has exclusive access to OpenAI models (GPT-4, o1)
-with enterprise features. AWS Bedrock offers multi-provider choice (Claude,
-Llama, Mistral, etc.).
+Key differentiator: Azure has exclusive access to OpenAI models (GPT-4, GPT-5,
+o-series) with enterprise features. AWS Bedrock offers multi-provider choice
+(Claude, Llama, Mistral, Nova, etc.).
+
+##############################################################################
+# 2.8  LATEST AZURE AI UPDATES (Late 2025 - Early 2026)
+##############################################################################
+
+Q11: What is Microsoft Foundry and how does it replace Azure AI Studio?
+
+Answer:
+Microsoft Foundry (formerly Azure AI Studio / Azure AI Foundry) is the unified
+platform for building enterprise AI applications. Rebranded in late 2025.
+
+Foundry comprises natively integrated services:
+- Foundry Models: Model catalog and deployment (OpenAI, Meta, Mistral, Phi)
+- Foundry Agent Service: Build and deploy AI agents with tools and memory
+- Foundry Tools: Pre-built tools for RAG, code execution, web search
+- Foundry IQ: Evolution of Azure AI Search -- semantic search and retrieval
+- Foundry Control Plane: Governance, monitoring, and policy management
+- Foundry Local: Run AI locally for development and edge scenarios
+- Azure Machine Learning: Full ML lifecycle management
+
+Key additions include the Foundry Agent Service which allows building agents
+that can use tools, access databases, and orchestrate multi-step workflows
+natively within the Azure ecosystem.
+
+Q12: What are the latest Azure Cosmos DB vector search improvements?
+
+Answer:
+Azure Cosmos DB received major AI-focused updates at Ignite 2025:
+
+1. Float16 Vector Embeddings: Cuts storage by 50%, 30% faster vector
+   ingestion, 300% lower P99 latency.
+
+2. Full-Text Search GA: Fuzzy matching, new language support, enabling
+   hybrid search (vector + keyword) in a single database.
+
+3. Cosmos DB MCP Toolkit (public preview): Integrates the NoSQL API with
+   Microsoft's Foundry Agent Service, allowing AI agents to perform vector
+   searches and data operations against live Cosmos DB data.
+
+4. Semantic Reranking (private preview): Applied to any query type, uses
+   Azure AI Search's reranking model to reorder results by semantic meaning.
+
+5. Foundry Connection: Direct integration between Cosmos DB and Foundry
+   for seamless RAG pipelines.
+
+Q13: What is Foundry Agent Service and how do you build agents?
+
+Answer:
+Foundry Agent Service allows building production AI agents that can:
+- Use tools (web search, code execution, database queries)
+- Access Cosmos DB for vector search and data operations via MCP
+- Leverage Azure AI Search (now Foundry IQ) for RAG
+- Maintain conversation memory across sessions
+- Follow governance policies from Foundry Control Plane
+
+Agents can be built using:
+- Azure SDK for Python/JavaScript
+- REST API
+- Foundry Studio (visual builder)
+- Integration with LangChain/LangGraph via Azure connectors
+
+> YOUR EXPERIENCE: At RavianAI, you can leverage Azure's Foundry platform
+> for enterprise-grade AI agent deployment. The Cosmos DB vector search and
+> MCP Toolkit align with building RAG-powered agents. Azure Functions for
+> serverless AI processing connects to your experience at Fealty Technologies
+> building web applications on Azure.

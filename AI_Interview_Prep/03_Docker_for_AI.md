@@ -458,3 +458,78 @@ Model loading strategies:
 
 Best practice: Use init containers or download-at-startup for production.
 Bake into image for edge deployments without network access.
+
+##############################################################################
+# 3.8  DOCKER FOR LLM INFERENCE SERVERS (2025-2026)
+##############################################################################
+
+Q9: How do you containerize LLM inference servers for production?
+
+Answer:
+Production Dockerfile for vLLM:
+```dockerfile
+FROM vllm/vllm-openai:latest
+# Or pin version: vllm/vllm-openai:v0.7.0
+
+ENV MODEL_NAME="meta-llama/Llama-3.1-8B-Instruct"
+ENV MAX_MODEL_LEN=8192
+ENV GPU_MEMORY_UTILIZATION=0.90
+ENV TENSOR_PARALLEL_SIZE=1
+
+# Download model at build time (optional, for air-gapped)
+# RUN python -c "from huggingface_hub import snapshot_download; \
+#     snapshot_download('${MODEL_NAME}')"
+
+EXPOSE 8000
+ENTRYPOINT ["python", "-m", "vllm.entrypoints.openai.api_server", \
+    "--model", "${MODEL_NAME}", \
+    "--max-model-len", "${MAX_MODEL_LEN}", \
+    "--gpu-memory-utilization", "${GPU_MEMORY_UTILIZATION}", \
+    "--tensor-parallel-size", "${TENSOR_PARALLEL_SIZE}"]
+```
+
+Multi-GPU Docker Compose:
+```yaml
+version: "3.8"
+services:
+  vllm:
+    image: vllm/vllm-openai:latest
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 2  # Number of GPUs
+              capabilities: [gpu]
+    environment:
+      - MODEL_NAME=meta-llama/Llama-3.1-70B-Instruct
+      - TENSOR_PARALLEL_SIZE=2
+    ports:
+      - "8000:8000"
+    volumes:
+      - model-cache:/root/.cache/huggingface
+    shm_size: "16gb"  # Required for tensor parallelism
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - vllm
+
+volumes:
+  model-cache:
+```
+
+Key Docker settings for LLM inference:
+- shm_size: "16gb" or higher for multi-GPU tensor parallelism
+- NVIDIA Container Toolkit with CDI support (2025)
+- GPU MIG partitioning for H100/A100 (share single GPU)
+- GPU time-slicing in Kubernetes for cost optimization
+
+> YOUR EXPERIENCE: At RavianAI, you managed Docker orchestration with Nginx
+> load balancing for the AI platform. Containerizing LLM inference servers
+> with proper GPU configuration, health checks, and scaling is directly
+> relevant to your production deployment experience.

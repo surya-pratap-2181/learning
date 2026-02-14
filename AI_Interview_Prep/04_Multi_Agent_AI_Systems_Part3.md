@@ -1408,3 +1408,119 @@ frameworks. Practice the basic patterns:
 These frameworks evolve rapidly. AutoGen rebranded to AG2 and rewrote their
 architecture in 0.4. CrewAI adds new features monthly. LangGraph keeps adding
 new pre-built patterns. Mention you stay current with the docs and changelogs.
+
+---
+
+# ============================================================
+# SECTION 10: LATEST MULTI-AGENT DEVELOPMENTS (Late 2025 - 2026)
+# ============================================================
+
+## 10.1 OpenAI Agents SDK (2025)
+
+Successor to the experimental Swarm framework, the OpenAI Agents SDK is a production-grade
+SDK for building custom agents with OpenAI models.
+
+**Key Features:**
+- Routine-based model: agents defined through prompts and function docstrings
+- Built-in tool usage and function calling
+- Guardrails for input/output validation
+- Tracing and observability built-in
+- Handoff patterns for multi-agent coordination
+
+```python
+# OpenAI Agents SDK example (conceptual)
+from openai import Agent, Runner
+
+research_agent = Agent(
+    name="Researcher",
+    instructions="You research topics using web search.",
+    tools=[web_search_tool],
+)
+
+writer_agent = Agent(
+    name="Writer",
+    instructions="You write articles based on research. Hand off to Researcher for facts.",
+    handoffs=[research_agent],
+)
+
+result = Runner.run(writer_agent, "Write an article about AI agents in 2026")
+```
+
+**When to choose:**
+- You're already using OpenAI models
+- You want first-party support and simplicity
+- Single agent + tools is your primary pattern
+- You need built-in tracing without external tools
+
+## 10.2 Google A2A (Agent-to-Agent) Protocol
+
+Google's open protocol (April 2025) for standardized agent-to-agent communication.
+Complements MCP (which handles agent-to-tool communication).
+
+**Key Concepts:**
+- **Agent Card**: JSON metadata file at `/.well-known/agent.json` describing agent capabilities
+- **Tasks**: Units of work with lifecycle (submitted → working → completed/failed)
+- **Artifacts**: Output data from completed tasks (text, files, structured data)
+- **Push Notifications**: Server-sent events for long-running tasks
+
+```
+MCP vs A2A (Complementary, not Competing):
+┌──────────────┐                    ┌──────────────┐
+│   Agent A     │───── A2A ────────│   Agent B     │
+│              │    (agent-to-     │              │
+│              │     agent)        │              │
+└──────┬───────┘                    └──────┬───────┘
+       │                                    │
+      MCP                                  MCP
+  (agent-to-tool)                     (agent-to-tool)
+       │                                    │
+  ┌────┴────┐                          ┌────┴────┐
+  │ DB, API, │                          │ DB, API, │
+  │ Files    │                          │ Files    │
+  └─────────┘                          └─────────┘
+```
+
+**A2A vs MCP:**
+| Aspect | MCP | A2A |
+|--------|-----|-----|
+| Purpose | Connect agents to tools/data | Connect agents to other agents |
+| Analogy | USB for peripherals | HTTP for web services |
+| Protocol | JSON-RPC over stdio/HTTP | REST + JSON |
+| Discovery | Server lists tools | Agent Cards at well-known URL |
+| Creator | Anthropic | Google |
+| State | Stateful server connections | Task-based lifecycle |
+
+## 10.3 CrewAI Agent Operations Platform (AOP) - Late 2025
+
+CrewAI launched a control plane for deploying, monitoring, and governing agent
+teams in production:
+- **Deploy**: One-click deployment of crews
+- **Monitor**: Real-time dashboards for agent performance
+- **Govern**: Policy controls for agent behaviors and spending limits
+- **Evaluate**: A/B testing between different crew configurations
+
+## 10.4 Framework Landscape Summary (February 2026)
+
+| Framework | Best For | Architecture | Production Ready | Key 2025 Update |
+|-----------|----------|-------------|-----------------|-----------------|
+| **LangGraph** | Complex workflows, precise control | Graph-based | Yes | LangGraph Platform, pre-built agents |
+| **AG2/AutoGen** | Dynamic conversations, research | Conversation-based | Yes | AG2 rebrand, v0.4 rewrite |
+| **CrewAI** | Role-based teams, business workflows | Task-based | Yes | AOP platform for production |
+| **OpenAI Agents SDK** | Simple agents with OpenAI models | Routine-based | Yes | New first-party SDK |
+| **Amazon Bedrock Agents** | Enterprise AWS deployments | Managed service | Yes | AgentCore with Policy & Eval |
+| **Pydantic AI** | Type-safe Python agents | Function-based | Yes | Growing adoption |
+| **smolagents** | Lightweight open-source agents | Code-based | Experimental | HuggingFace backing |
+
+> 🔵 **YOUR EXPERIENCE**: At RavianAI, you have direct experience with multiple frameworks
+> (AutoGen/AG2, LangGraph). You can discuss the practical tradeoffs: AutoGen's conversation
+> paradigm works well for collaborative research but LangGraph's graph-based approach gives
+> better control for production workflows. Understanding the latest protocols (MCP for tool
+> integration, A2A for agent communication) and new frameworks (OpenAI Agents SDK) shows
+> you stay current with the rapidly evolving landscape.
+
+---
+
+*[END OF PART 3]*
+
+*Guide compiled: February 2025, updated February 2026*
+*Covers material relevant for AI Engineer interviews through 2025-2026*
