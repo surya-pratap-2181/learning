@@ -5,5 +5,4 @@ _site/
 .jekyll-metadata
 vendor/
 .bundle/
-Gemfile.lock
 add_frontmatter.py

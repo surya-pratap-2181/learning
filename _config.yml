@@ -2,11 +2,7 @@ title: AI Engineer Interview Prep
 description: Comprehensive interview preparation guide for AI/ML Engineers (2025-2026)
 url: "https://surya-pratap-2181.github.io"
 baseurl: "/learning"
-remote_theme: just-the-docs/just-the-docs
-
-plugins:
-  - jekyll-remote-theme
-  - jekyll-seo-tag
+theme: just-the-docs
 
 sass:
   quiet_deps: true
