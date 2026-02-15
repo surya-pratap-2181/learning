@@ -5,6 +5,7 @@ parent: "DevOps & Cloud Infrastructure"
 nav_order: 4
 render_with_liquid: false
 ---
+{% raw %}
 
 ## SECTION 4: CI/CD FOR AI/ML - INTERVIEW QUESTIONS & ANSWERS (2025-2026)
 
@@ -523,3 +524,4 @@ Shadow deployment (shadow testing):
 - New model processes same requests but responses are discarded (logged only).
 - Compare predictions offline.
 - Zero risk: Users never see new model's output.
+{% endraw %}

@@ -5,6 +5,7 @@ parent: "Python & Coding"
 nav_order: 5
 render_with_liquid: false
 ---
+{% raw %}
 
 # Section 5: Package Management & Code Quality for AI Engineers
 
@@ -546,3 +547,4 @@ jobs:
       - run: bandit -r src/
       - run: safety check
 ```
+{% endraw %}

@@ -5,6 +5,7 @@ parent: "DevOps & Cloud Infrastructure"
 nav_order: 10
 render_with_liquid: false
 ---
+{% raw %}
 
 SECTION 7: SECURITY FOR AI SYSTEMS
 AI System Design Interview Guide for AI/ML Engineers (2025-2026)
@@ -392,4 +393,5 @@ class AdaptiveRateLimiter:
 ```
 
 ## END OF SECTION 7
+{% endraw %}
 

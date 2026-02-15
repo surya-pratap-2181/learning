@@ -5,6 +5,7 @@ parent: "LLM & AI Fundamentals"
 nav_order: 4
 render_with_liquid: false
 ---
+{% raw %}
 
 # Prompt Engineering: Comprehensive Interview Guide for AI Engineers (2025-2026)
 
@@ -2823,3 +2824,4 @@ You are a helpful customer service agent.
 ---
 
 *This guide covers the comprehensive landscape of prompt engineering for AI Engineer interviews as of early 2026. Techniques and best practices evolve rapidly with new model releases.*
+{% endraw %}

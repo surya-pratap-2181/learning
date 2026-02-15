@@ -5,6 +5,7 @@ parent: "Python & Coding"
 nav_order: 4
 render_with_liquid: false
 ---
+{% raw %}
 
 # Section 7: Python Coding Challenges for AI Engineer Roles
 
@@ -1319,3 +1320,4 @@ def deduplicate_ordered(items: list) -> list:
             result.append(item)
     return result
 ```
+{% endraw %}
