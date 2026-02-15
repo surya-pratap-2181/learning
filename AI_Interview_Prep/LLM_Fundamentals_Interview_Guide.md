@@ -25,6 +25,7 @@ nav_order: 1
 
 ---
 
+<a id="section-1"></a>
 # SECTION 1: CORE CONCEPTS - TRANSFORMER ARCHITECTURE, SELF-ATTENTION, POSITIONAL ENCODING
 
 ## 1.1 The Transformer Architecture
@@ -411,6 +412,7 @@ The **context window** (or context length) is the maximum number of tokens a mod
 
 ---
 
+<a id="section-2"></a>
 # SECTION 2: TOKENIZATION, PRE-TRAINING VS FINE-TUNING
 
 ## 2.1 Tokenization
@@ -745,6 +747,7 @@ SFT is the process of fine-tuning a pre-trained model on curated (instruction, r
 
 ---
 
+<a id="section-3"></a>
 # SECTION 3: RLHF, DPO, CONSTITUTIONAL AI, ALIGNMENT TECHNIQUES
 
 ## 3.1 The LLM Training Pipeline
@@ -1079,6 +1082,7 @@ GRPO: reward = (R(y) - mean(R(group))) / std(R(group))  (no value model)
 
 ---
 
+<a id="section-4"></a>
 # SECTION 4: DECODING STRATEGIES, SAMPLING, EVALUATION METRICS
 
 ## 4.1 Decoding / Text Generation Strategies
@@ -1499,6 +1503,7 @@ Provide your ratings and justification.
 
 ---
 
+<a id="section-5"></a>
 # SECTION 5: HALLUCINATION, SCALING LAWS, EMERGENT ABILITIES, CHAIN-OF-THOUGHT, IN-CONTEXT LEARNING
 
 ## 5.1 Hallucination
@@ -1831,6 +1836,7 @@ cheese => fromage
 
 ---
 
+<a id="section-6"></a>
 # SECTION 6: COMMON INTERVIEW QUESTIONS WITH DETAILED ANSWERS
 
 ## Category A: Foundational Understanding
@@ -2407,6 +2413,7 @@ RMSNorm is ~10-15% faster than LayerNorm with negligible quality difference.
 
 ---
 
+<a id="section-7"></a>
 # SECTION 7: LATEST TRENDS IN LLMs (2025-2026)
 
 ## 7.1 Mixture of Experts (MoE)
@@ -3029,6 +3036,7 @@ for block in response.content:
 
 ---
 
+<a id="section-8"></a>
 # SECTION 8: COMPARISON OF MAJOR LLM PROVIDERS
 
 ## 8.1 Provider Overview
@@ -3428,6 +3436,7 @@ Reasoning models (with thinking):
 
 ---
 
+<a id="section-9"></a>
 # SECTION 9: AI AGENT FRAMEWORKS LANDSCAPE 2025-2026
 
 ## 9.1 Overview: The Rise of Agentic AI
@@ -3709,6 +3718,7 @@ Critical for production systems where full autonomy is risky.
 
 ---
 
+<a id="section-10"></a>
 # SECTION 10: MODEL CONTEXT PROTOCOL (MCP) BY ANTHROPIC
 
 ## 10.1 What is MCP?

@@ -30,7 +30,7 @@ nav_order: 1
 
 ---
 
-<a name="section-1"></a>
+<a id="section-1"></a>
 # SECTION 1: WHAT IS RAG?
 
 ## 1.1 Definition
@@ -137,7 +137,7 @@ Need all of the above?    ──────▶  RAG + Fine-Tuned model + Good P
 
 ---
 
-<a name="section-2"></a>
+<a id="section-2"></a>
 # SECTION 2: EXPLAINING RAG TO A LAYMAN
 
 ## 2.1 The Library Analogy
@@ -181,7 +181,7 @@ Open-Book Exam (RAG):
 
 ---
 
-<a name="section-3"></a>
+<a id="section-3"></a>
 # SECTION 3: RAG ARCHITECTURE DEEP DIVE
 
 ## 3.1 Evolution of RAG (2020-2026)
@@ -281,7 +281,7 @@ Treats RAG as composable modules that can be mixed, replaced, and extended:
 
 ---
 
-<a name="section-4"></a>
+<a id="section-4"></a>
 # SECTION 4: CHUNKING STRATEGIES
 
 ## 4.1 Why Chunking Matters
@@ -369,7 +369,7 @@ Document Type?
 
 ---
 
-<a name="section-5"></a>
+<a id="section-5"></a>
 # SECTION 5: EMBEDDING MODELS
 
 ## 5.1 What are Embeddings?
@@ -410,7 +410,7 @@ Multilingual?
 
 ---
 
-<a name="section-6"></a>
+<a id="section-6"></a>
 # SECTION 6: VECTOR STORES
 
 ## 6.1 Comprehensive Comparison
@@ -448,7 +448,7 @@ Production - Large Scale (>10M vectors)?
 
 ---
 
-<a name="section-7"></a>
+<a id="section-7"></a>
 # SECTION 7: RETRIEVAL STRATEGIES
 
 ## 7.1 Dense Retrieval
@@ -508,7 +508,7 @@ results = compression_retriever.invoke(query)
 
 ---
 
-<a name="section-8"></a>
+<a id="section-8"></a>
 # SECTION 8: ADVANCED RAG TECHNIQUES
 
 ## 8.1 HyDE (Hypothetical Document Embedding)
@@ -595,7 +595,7 @@ Step-back question: "What are the rate limits and policies for different plan ti
 
 ---
 
-<a name="section-9"></a>
+<a id="section-9"></a>
 # SECTION 9: AGENTIC RAG
 
 ## 9.1 What is Agentic RAG?
@@ -782,7 +782,7 @@ graph.add_conditional_edges("evaluate", evaluate_answer, {
 
 ---
 
-<a name="section-10"></a>
+<a id="section-10"></a>
 # SECTION 10: RAG EVALUATION
 
 ## 10.1 RAGAS Framework
@@ -834,7 +834,7 @@ print(result)
 
 ---
 
-<a name="section-11"></a>
+<a id="section-11"></a>
 # SECTION 11: PRODUCTION RAG CHALLENGES
 
 ## 11.1 Common Challenges & Solutions
@@ -867,7 +867,7 @@ cache = RedisSemanticCache(
 
 ---
 
-<a name="section-12"></a>
+<a id="section-12"></a>
 # SECTION 12: FREQUENTLY ASKED INTERVIEW QUESTIONS (30+)
 
 ## Fundamentals
@@ -981,7 +981,7 @@ cache = RedisSemanticCache(
 
 ---
 
-<a name="section-13"></a>
+<a id="section-13"></a>
 # SECTION 13: FOLLOW-UP QUESTIONS INTERVIEWERS ASK
 
 These are the tricky follow-ups after your initial answer:
@@ -999,7 +999,7 @@ These are the tricky follow-ups after your initial answer:
 
 ---
 
-<a name="section-14"></a>
+<a id="section-14"></a>
 # SECTION 14: REAL-WORLD USE CASES
 
 ## 14.1 Enterprise Knowledge Base (Your Stellantis Experience)
@@ -1060,7 +1060,7 @@ User uploads dataset ──▶ EDA Agent ──▶ Feature Engineering Agent
 
 ---
 
-<a name="section-15"></a>
+<a id="section-15"></a>
 # SECTION 15: COMPLETE CODE EXAMPLES
 
 ## 15.1 Production RAG with LangChain (Full Example)

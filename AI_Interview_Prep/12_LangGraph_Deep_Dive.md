@@ -30,6 +30,7 @@ nav_order: 3
 
 ---
 
+<a id="section-1"></a>
 # SECTION 1: WHAT IS LANGGRAPH?
 
 ## 1.1 Definition
@@ -60,6 +61,7 @@ nav_order: 3
 
 ---
 
+<a id="section-2"></a>
 # SECTION 2: EXPLAINING TO A LAYMAN
 
 ## The Factory Assembly Line Analogy
@@ -74,6 +76,7 @@ nav_order: 3
 
 ---
 
+<a id="section-3"></a>
 # SECTION 3: CORE CONCEPTS
 
 ## 3.1 StateGraph
@@ -163,6 +166,7 @@ class AgentState(TypedDict):
 
 ---
 
+<a id="section-4"></a>
 # SECTION 4: GRAPH ARCHITECTURE PATTERNS
 
 ## 4.1 Linear (Simple Pipeline)
@@ -206,6 +210,7 @@ START → Generate → Evaluate ── (good) ── END
 
 ---
 
+<a id="section-5"></a>
 # SECTION 5: STATE MANAGEMENT
 
 ## 5.1 Checkpointing (Persistence)
@@ -239,6 +244,7 @@ app.update_state(config, {"query": "Modified"}, checkpoint_id=checkpoints[1].id)
 
 ---
 
+<a id="section-6"></a>
 # SECTION 6: HUMAN-IN-THE-LOOP
 
 ```python
@@ -262,6 +268,7 @@ result = app.invoke(None, config)  # Resume
 
 ---
 
+<a id="section-7"></a>
 # SECTION 7: MULTI-AGENT PATTERNS
 
 ## 7.1 Supervisor Pattern
@@ -309,6 +316,7 @@ def agent_handoff(state):
 
 ---
 
+<a id="section-8"></a>
 # SECTION 8: STREAMING
 
 | Mode | What Streams | Use Case |
@@ -330,6 +338,7 @@ async for event in app.astream_events(
 
 ---
 
+<a id="section-9"></a>
 # SECTION 9: MEMORY & PERSISTENCE
 
 | Memory Type | Scope | Feature | Example |
@@ -341,6 +350,7 @@ async for event in app.astream_events(
 
 ---
 
+<a id="section-10"></a>
 # SECTION 10: ERROR HANDLING
 
 ```python
@@ -364,6 +374,7 @@ graph.add_conditional_edges("risky", lambda s: "fallback" if s.get("error") else
 
 ---
 
+<a id="section-11"></a>
 # SECTION 11: LANGGRAPH vs CREWAI vs AUTOGEN
 
 | Feature | LangGraph | CrewAI | AutoGen (AG2) |
@@ -381,6 +392,7 @@ graph.add_conditional_edges("risky", lambda s: "fallback" if s.get("error") else
 
 ---
 
+<a id="section-12"></a>
 # SECTION 12: INTERVIEW QUESTIONS (25+)
 
 **Q1: What is LangGraph and how does it differ from LangChain?**
@@ -460,6 +472,7 @@ LangSmith tracing for every node, LangGraph Studio visual debugger, time travel 
 
 ---
 
+<a id="section-13"></a>
 # SECTION 13: FOLLOW-UP QUESTIONS
 
 | After You Say... | They Ask... |
@@ -472,6 +485,7 @@ LangSmith tracing for every node, LangGraph Studio visual debugger, time travel 
 
 ---
 
+<a id="section-14"></a>
 # SECTION 14: COMPLETE CODE EXAMPLE
 
 ```python
@@ -548,6 +562,7 @@ result = app.invoke({
 
 ---
 
+<a id="section-15"></a>
 # SECTION 15: PRODUCTION BEST PRACTICES
 
 1. **Always use checkpointer** - Even simple graphs benefit from persistence
