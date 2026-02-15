@@ -2,6 +2,14 @@
 // Minimalist dark-mode styles
 // ============================================
 
+// --- Design tokens ---
+$accent: #7c3aed;
+$accent-light: #a78bfa;
+$radius: 6px;
+$radius-pill: 999px;
+$border-subtle: rgba(255, 255, 255, 0.06);
+$border-hover: rgba(255, 255, 255, 0.12);
+
 // --- Typography & Readability ---
 .main-content {
   max-width: 52rem;
@@ -14,16 +22,14 @@
 
   p, li { color: rgba(var(--body-text-color-rgb, 205, 214, 244), 0.88); }
 
-  // Tighter code blocks
   pre, code {
     font-size: 0.85rem;
-    border-radius: 6px;
+    border-radius: $radius;
   }
 
-  // Cleaner tables
   table {
     font-size: 0.88rem;
-    border-radius: 6px;
+    border-radius: $radius;
     overflow: hidden;
   }
 }
@@ -31,14 +37,14 @@
 // --- Smooth scroll ---
 html { scroll-behavior: smooth; }
 
-// --- Reading Progress (subtle thin line) ---
+// --- Reading Progress ---
 .reading-progress {
   position: fixed;
   top: 0;
   left: 0;
   width: 0%;
   height: 2px;
-  background: #7c3aed;
+  background: $accent;
   z-index: 9999;
   transition: width 0.1s ease-out;
   opacity: 0.7;
@@ -60,7 +66,7 @@ html { scroll-behavior: smooth; }
   .stat-number {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #7c3aed;
+    color: $accent;
     display: block;
     line-height: 1.2;
   }
@@ -82,7 +88,7 @@ html { scroll-behavior: smooth; }
 }
 
 .category-card {
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid $border-subtle;
   border-radius: 8px;
   padding: 1rem 1.15rem;
   text-decoration: none !important;
@@ -94,31 +100,13 @@ html { scroll-behavior: smooth; }
 
   &:hover {
     background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.12);
+    border-color: $border-hover;
   }
 
-  .card-icon {
-    font-size: 1.4rem;
-    margin-bottom: 0.25rem;
-  }
-
-  .card-title {
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: var(--body-text-color);
-  }
-
-  .card-desc {
-    font-size: 0.78rem;
-    opacity: 0.5;
-    line-height: 1.4;
-  }
-
-  .card-count {
-    font-size: 0.7rem;
-    opacity: 0.35;
-    margin-top: 0.25rem;
-  }
+  .card-icon { font-size: 1.4rem; margin-bottom: 0.25rem; }
+  .card-title { font-size: 0.95rem; font-weight: 600; color: var(--body-text-color); }
+  .card-desc { font-size: 0.78rem; opacity: 0.5; line-height: 1.4; }
+  .card-count { font-size: 0.7rem; opacity: 0.35; margin-top: 0.25rem; }
 }
 
 // --- Callouts ---
@@ -126,28 +114,17 @@ html { scroll-behavior: smooth; }
 .callout-tip,
 .callout-warning {
   padding: 0.75rem 1rem;
-  border-radius: 6px;
+  border-radius: $radius;
   margin: 1rem 0;
   font-size: 0.9rem;
   border-left: 3px solid;
 }
 
-.callout-experience {
-  border-color: #3b82f6;
-  background: rgba(59, 130, 246, 0.06);
-}
+.callout-experience { border-color: #3b82f6; background: rgba(59, 130, 246, 0.06); }
+.callout-tip        { border-color: #10b981; background: rgba(16, 185, 129, 0.06); }
+.callout-warning     { border-color: #f59e0b; background: rgba(245, 158, 11, 0.06); }
 
-.callout-tip {
-  border-color: #10b981;
-  background: rgba(16, 185, 129, 0.06);
-}
-
-.callout-warning {
-  border-color: #f59e0b;
-  background: rgba(245, 158, 11, 0.06);
-}
-
-// --- Study Tracker (bottom-right, compact) ---
+// --- Study Tracker ---
 .progress-tracker {
   position: fixed;
   bottom: 1rem;
@@ -162,7 +139,7 @@ html { scroll-behavior: smooth; }
 .progress-badge {
   background: var(--body-background-color);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 999px;
+  border-radius: $radius-pill;
   padding: 0.35rem 0.75rem;
   font-size: 0.72rem;
   font-weight: 500;
@@ -175,17 +152,14 @@ html { scroll-behavior: smooth; }
 
   &:hover { opacity: 1; }
 
-  .progress-ring {
-    width: 18px;
-    height: 18px;
-  }
+  .progress-ring { width: 18px; height: 18px; }
 }
 
 .mark-read-btn {
-  background: rgba(124, 58, 237, 0.15);
-  color: #a78bfa;
-  border: 1px solid rgba(124, 58, 237, 0.25);
-  border-radius: 999px;
+  background: rgba($accent, 0.15);
+  color: $accent-light;
+  border: 1px solid rgba($accent, 0.25);
+  border-radius: $radius-pill;
   padding: 0.35rem 0.9rem;
   font-size: 0.75rem;
   font-weight: 500;
@@ -195,9 +169,7 @@ html { scroll-behavior: smooth; }
   align-items: center;
   gap: 0.3rem;
 
-  &:hover {
-    background: rgba(124, 58, 237, 0.25);
-  }
+  &:hover { background: rgba($accent, 0.25); }
 
   &.is-read {
     background: rgba(16, 185, 129, 0.15);
@@ -206,7 +178,7 @@ html { scroll-behavior: smooth; }
   }
 }
 
-// --- Keyboard hints (hidden by default, shown on hover near bottom-left) ---
+// --- Keyboard hints ---
 .kbd-hint {
   position: fixed;
   bottom: 1rem;
@@ -218,7 +190,7 @@ html { scroll-behavior: smooth; }
   pointer-events: none;
 
   kbd {
-    background: rgba(255, 255, 255, 0.06);
+    background: $border-subtle;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 3px;
     padding: 1px 4px;
@@ -227,32 +199,101 @@ html { scroll-behavior: smooth; }
   }
 }
 
-// Show kbd hints when hovering near bottom of page
 body:hover .kbd-hint { opacity: 0.35; }
 
-// --- Search input ---
-.search-input {
-  border-radius: 6px !important;
+// --- Progress Modal ---
+.progress-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.progress-modal {
+  background: var(--body-background-color, #1e1e2e);
+  color: var(--body-text-color, #cdd6f4);
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 420px;
+  width: 90%;
+  max-height: 70vh;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.modal-title { font-weight: 600; }
+
+.modal-close {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.25rem;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.modal-stats { text-align: center; margin-bottom: 1rem; }
+.modal-pct { font-size: 1.75rem; font-weight: 700; color: $accent; }
+.modal-subtitle { font-size: 0.8rem; opacity: 0.5; }
+
+.modal-bar {
+  background: $border-subtle;
+  border-radius: $radius-pill;
+  height: 4px;
+  margin-top: 0.75rem;
+  overflow: hidden;
+}
+
+.modal-bar-fill {
+  background: $accent;
+  height: 100%;
+  border-radius: $radius-pill;
+}
+
+.modal-list {
+  font-size: 0.85rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.modal-list-item { margin: 0.3rem 0; }
+.modal-link { color: $accent-light; text-decoration: none; }
+.modal-date { opacity: 0.35; font-size: 0.75rem; }
+.modal-empty { text-align: center; opacity: 0.4; font-size: 0.85rem; }
+
+.modal-footer { margin-top: 1rem; text-align: center; }
+
+.modal-reset {
+  background: none;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+  border-radius: $radius;
+  padding: 0.3rem 0.75rem;
+  cursor: pointer;
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+// --- Search ---
+.search-input { border-radius: $radius !important; }
 
 // --- Mobile ---
 @media (max-width: 680px) {
-  .category-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .stats-bar {
-    gap: 1.5rem;
-  }
-
-  .kbd-hint {
-    display: none;
-  }
-
-  .progress-tracker {
-    bottom: 0.75rem;
-    right: 0.75rem;
-  }
+  .category-grid { grid-template-columns: 1fr; }
+  .stats-bar { gap: 1.5rem; }
+  .kbd-hint { display: none; }
+  .progress-tracker { bottom: 0.75rem; right: 0.75rem; }
 
   .main-content {
     h1 { font-size: 1.5rem; }
@@ -262,11 +303,6 @@ body:hover .kbd-hint { opacity: 0.35; }
 }
 
 @media (max-width: 400px) {
-  .category-card {
-    padding: 0.85rem;
-  }
-
-  .stat-item .stat-number {
-    font-size: 1.25rem;
-  }
+  .category-card { padding: 0.85rem; }
+  .stat-item .stat-number { font-size: 1.25rem; }
 }
